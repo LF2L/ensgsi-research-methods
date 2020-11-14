@@ -1,0 +1,33 @@
+---
+title: "Module Recherche"
+description: |
+  Ce site est le pour le module de recherche à l'ENSGSI
+output_dir: "docs"
+navbar:
+  logo:
+    image: figures/ENSGSI-Avatar.png
+    href: index.html
+  right:
+    - text: "Seances"
+      href: "01-seances.html"
+      # menu:
+      #   - text: "S1: Méthodologie de recherche"
+      #     href: publish_article.html
+      #   - text: "---"
+      #   - text: "S2: Protocole expérimental"
+      #     href: publish_website.html
+      #   - text: "---"
+      #   - text: "S3: Rédaction des articles scientifiques"
+      #     href: metadata.html
+      #   - text: "---"
+      #   - text: "S4: Reproducible Research "
+      #     href: metadata.html
+    - text: "References"
+      href: "02-references.html"
+    - icon: fab fa-github
+      href: https://github.com/rstudio/distill
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+---
