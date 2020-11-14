@@ -21,7 +21,11 @@ author:
     affiliation: ERPI
     affiliation_url: https://erpi.univ-lorraine.fr/
     orcid_id: 0000-0001-6328-1338
+
+date: Decembre 03, 2020
+citation_url: https://github.com/LF2L/ensgsi-research-methods
 bibliography: biblio.bib
+link-citations: true
 site: distill::distill_website
 ---
 
@@ -54,6 +58,11 @@ Cet enseignement a pour objectif de permettre aux étudiants de comprendre et d�
 ## Atelier d'écriture scientifique et de publications
 
 Cet enseignement a pour objectif de permettre aux étudiants d’améliorer leur pratique de rédaction des rapports et mémoires (notamment pour la rédaction du mémoire de stage).
+
+
+::: {.l-body-outset}
+![](figures/first-draft.jpg){style="width: 100%"}
+:::
 
 # Seances
 
@@ -98,19 +107,9 @@ Chaque séance d’enseignement avec un composant pratique, les étudiants auron
 Pour la partie écriture, le rendu sera fourni sous la forme d’une publication « état de l’art » qui sera évaluée par deux relecteurs de l’équipe pédagogique. 
 
 
+## Acknowledgments {.appendix}
 
-
-
-
-
-
-
-
-
-
-
-
-
+Ce module est un *Working in Progress*  et egalement il est en mode open source. 
 
 
 
