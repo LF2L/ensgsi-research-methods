@@ -1,5 +1,5 @@
 ---
-title: "Innovation, Developpment et Rercherche"
+title: "Innovation, Developpment et Recherche"
 description: |
   Introduction à la recherche scientifique.
 author:
