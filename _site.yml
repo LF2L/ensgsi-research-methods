@@ -3,10 +3,12 @@ title: "Module Recherche"
 description: |
   Ce site est le pour le module de recherche à l'ENSGSI
 output_dir: "docs"
+theme: ENSGSI-theme.css
 navbar:
   logo:
     image: figures/ENSGSI-Avatar.png
     href: index.html
+  source_url: https://github.com/rstudio/distill
   right:
     - text: "Seances"
       href: "01-seances.html"
@@ -24,8 +26,7 @@ navbar:
       #     href: metadata.html
     - text: "References"
       href: "02-references.html"
-    - icon: fab fa-github
-      href: https://github.com/rstudio/distill
+
 source_url: https://github.com/LF2L/ensgsi-research-methods
 repository_url: https://github.com/LF2L/ensgsi-research-methods
 creative_commons: CC BY

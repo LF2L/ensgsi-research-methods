@@ -22,7 +22,7 @@ author:
     affiliation_url: https://erpi.univ-lorraine.fr/
     orcid_id: 0000-0001-6328-1338
 
-date: Decembre 03, 2020
+date: December 03, 2020
 citation_url: https://github.com/LF2L/ensgsi-research-methods
 bibliography: biblio.bib
 link-citations: true

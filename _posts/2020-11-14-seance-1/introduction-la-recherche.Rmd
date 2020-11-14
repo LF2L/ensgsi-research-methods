@@ -1,0 +1,49 @@
+---
+title: "Introduction à la recherche"
+description: |
+  A short description of the post.
+author:
+  - name: Mauricio
+date: 11-14-2020
+output:
+  distill::distill_article:
+    self_contained: false
+creative_commons: CC BY-SA 
+preview: images/teaser.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Plannig de la journée
+
+<br>
+
+`r emo::ji("calendar")`  Decembre XX, 2020\
+`r emo::ji("clock8")`  09:00am - 05:00pm\
+`r emo::ji("round_pushpin")`  Teams\
+`r emo::ji("white_check_mark")`  [Register](https://cvent.me/en41V)\
+`r emo::ji("anchor")`  <https://lf2l.github.io/ensgsi-research-methods/>
+
+<br>
+
+| Time          | Activity                |
+|:--------------|:------------------------|
+| 09:00 - 09:50 | Intro                   |
+| 10:00 - 10:10 | *Break* :coffee:        |
+| 10:15 - 11:00 | Activité 1              |
+| 11:45 - 12:00 | *Restitution du matin*  |
+| 13:30 - 15:00 | Intro 2                 |
+| 15:00 - 15:15 | *Break* :potable_water: |
+| 15:20 - 16:15 | Work in groups          |
+| 16:20 - 17:00 | Wrap-up / Overtime      |
+
+# Slides
+
+[![Slides](images/teaser.jpg "Slides 1"){width=50% .external}](slides/seance-1.pdf)
+
+
+
+
+
