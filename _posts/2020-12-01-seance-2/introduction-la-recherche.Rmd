@@ -1,5 +1,5 @@
 ---
-title: "Introduction à la recherche"
+title: "Seance 2"
 description: |
   A short description of the post.
 author:
