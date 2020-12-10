@@ -16,11 +16,12 @@ compare_updates_url: https://github.com/LF2L/ensgsi-research-methods/commits/mas
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
 # Plannig de la journée
 
-<br>
+
 
 `r emo::ji("calendar")`  Decembre XX, 2020\
 `r emo::ji("clock8")`  09:00am - 05:00pm\
@@ -49,6 +50,7 @@ knitr::opts_chunk$set(echo = FALSE)
 [![Slides](images/teaser.jpg "Slides 1"){width=100% .external}](slides/seance-1.pdf)
 
 :::
+
 
 
 

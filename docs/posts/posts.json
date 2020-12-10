@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-01-30-seance-4/",
+    "title": "Reproducble research",
+    "description": "A new article created using the Distill format.",
+    "author": [
+      {
+        "name": "Fabio Cruz",
+        "url": "https://erpi.univ-lorraine.fr/people/Fabio-Cruz/"
+      }
+    ],
+    "date": "2020-12-10",
+    "categories": [],
+    "contents": "\nPlannig de la journée\n📆 Janvier XX, 2020\n🕗 09:00am - 05:00pm\n📍 Teams\n✅ Register\n⚓ https://lf2l.github.io/ensgsi-research-methods/\nPresentation\nProposition for Erasmus+ Project\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nAtelier\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-10T15:20:16+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-11-14-seance-1/",
     "title": "Introduction à la recherche",
     "description": "A short description of the post.",
