@@ -1,7 +1,5 @@
----
+--- 
 title: "Innovation, Developpment et Recherche"
-description: |
-  Introduction à la recherche scientifique.
 author:
   - first_name: "Mauricio"
     last_name: "Camargo"
@@ -21,13 +19,18 @@ author:
     affiliation: ERPI
     affiliation_url: https://erpi.univ-lorraine.fr/
     orcid_id: 0000-0001-6328-1338
-
-date: December 03, 2020
-#citation_url: https://github.com/LF2L/ensgsi-research-methods
-bibliography: biblio.bib
-link-citations: true
-site: distill::distill_website
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [biblio.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
+
+
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
