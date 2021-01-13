@@ -1,4 +1,5 @@
 book_filename: "Reproducible research An Introduction"
+output_dir: "docs"
 delete_merged_file: true
 language:
   ui:
