@@ -1,9 +1,11 @@
 bookdown::gitbook:
-  css: style.css
+  css: assets/ENSGSI-theme.css
   config:
     toc:
+      collapse: section
+      scroll_highlight: yes
       before: |
-        <li><a href="./">Introduction to the Reproducible Research</a></li>
+        <li class="toc-logo"><a href=" "><img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ERPI/logo-ERPI.svg"></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]
@@ -12,5 +14,5 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
+  keep_tex: no
 bookdown::epub_book: default
