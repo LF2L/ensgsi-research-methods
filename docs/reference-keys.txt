@@ -1,9 +1,8 @@
-hello-students
-acknowledgements
-types-de-recherche-applique-théorique-étude-de-cas-expérimentation
-atelier-décriture-scientifique-et-de-publications-1
+remember
 introduction
 presentation
+types-de-recherche-applique-théorique-étude-de-cas-expérimentation
+atelier-décriture-scientifique-et-de-publications-1
 introduction-1
 presentation-1
 introduction-2

@@ -1,25 +1,26 @@
 --- 
 title: "Innovation, Developpment et Recherche"
 description: "Reproducible research module 2021"
-author:
-  - first_name: "Mauricio"
-    last_name: "Camargo"
-    url: https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/
-    affiliation: ERPI
-    affiliation_url: https://erpi.univ-lorraine.fr/
-    orcid_id: 0000-0003-3867-2438 
-  - first_name: "Fabio"
-    last_name: "Cruz"
-    url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
-    affiliation: ERPI
-    affiliation_url: https://erpi.univ-lorraine.fr/
-    orcid_id: 0000-0001-8529-5327
-  - first_name: "Giovanny "
-    last_name: "Arbelaez"
-    url: https://erpi.univ-lorraine.fr/people/Ferney-Osorio/
-    affiliation: ERPI
-    affiliation_url: https://erpi.univ-lorraine.fr/
-    orcid_id: 0000-0001-6328-1338
+author: Fabio CRUZ, Giovanny ARBELAEZ et Mauricio CAMARGO^[https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/]
+# author:
+#   - first_name: "Mauricio"
+#     last_name: "Camargo"
+#     url: https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/
+#     affiliation: ERPI
+#     affiliation_url: https://erpi.univ-lorraine.fr/
+#     orcid_id: 0000-0003-3867-2438 
+#   - first_name: "Fabio"
+#     last_name: "Cruz"
+#     url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
+#     affiliation: ERPI
+#     affiliation_url: https://erpi.univ-lorraine.fr/
+#     orcid_id: 0000-0001-8529-5327
+#   - first_name: "Giovanny "
+#     last_name: "Arbelaez"
+#     url: https://erpi.univ-lorraine.fr/people/Ferney-Osorio/
+#     affiliation: ERPI
+#     affiliation_url: https://erpi.univ-lorraine.fr/
+#     orcid_id: 0000-0001-6328-1338
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -27,40 +28,54 @@ bibliography: [biblio.bib]
 biblio-style: apalike
 link-citations: yes
 
-github-repo: "andrewmaclachlan/CASA0005repo"
+github-repo: "LF2L/ensgsi-research-methods"
+url: 'https\://LF2L.github.io/ensgsi-research-methods/'
 
 ---
-
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+require(tidyverse)
+require(xaringan)
+require(xaringanExtra)
 
 ```
 
 
+
 # Bonjour ! {-}
 
-## Hello Students
+## Hello Students {-}
 
- <a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg" width="120" alt="CASA0005 course" align="right" style="margin: 0 1em 0 1em" /></a> and a warm welcome to the module of reproducible research for in ENSGSI master course.
+ <img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Various/People/educator.jpg" width="120" alt="Introductions course" align="right" style="margin: 0 1em 0 1em" /> We give you a warm welcome to the module of reproducible research for in ENSGSI master course.
 
-We care for open Science and open practices.
+We care for open science and open practices.
 Thus, this website is hosted on GitHub and holds all the practical instructions and data. 
 
-Data used within the practicals is available online, however occasionally websites can undergo maintenance or be inaccessible due to political factors such as government shutdowns. 
 
 
-## Acknowledgements
+## Acknowledgements ans Inspirations {-}
 
 Thanks to the following people who have either contributed directly or provided code in repositories that have helped me style this book:
 
+<div class="col2">
+
+* [STAT 545](https://stat545.com/index.html#other-contributors)
+* [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/)
+* [Hadley Wickham](https://twitter.com/hadleywickham)
+* [Alison Presmanes Hill](https://twitter.com/apreshill)
+* [Desirée De Leon](https://twitter.com/dcossyle)
+* [Yihui Xie](https://twitter.com/xieyihui)
+* [Robin Lovelace](https://twitter.com/robinlovelace)
+* [Twitter for R programmers](https://www.t4rstats.com/index.html)
+* [Matt Ng](https://twitter.com/mattnkm)
+* [StatQuest with Josh Starmer](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
+* [Julia Silge](https://twitter.com/juliasilge)
+* [Jenny Bryan](https://twitter.com/JennyBryan)
+* [Garrick Aden‑Buie](https://twitter.com/grrrck)
+</div><br/>
 
 The R package and analysis artwork used within this book has been produced by [allison_horst](https://twitter.com/allison_horst), whilst artwork used in information boxes has been produced by [Desirée De Leon](https://twitter.com/dcossyle). You can find Allison's images on the [stats illustration GitHub repository](https://github.com/allisonhorst/stats-illustrations) and Desirée's on the [rstudio4edu GitHub repository](https://github.com/rstudio4edu/rmd4edu).
 

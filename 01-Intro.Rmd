@@ -2,4 +2,94 @@
 
 ## Presentation
 
-Aqui va la presentacion
+
+```{r embed-xaringan, echo=FALSE}
+
+embed_xaringan(url = "slides/00-Open-science/index.html", ratio = "16:9")
+
+```
+
+
+## Goals of the Seance {-}
+
+
+>The main  goal of this module is to enable the students to konw the fundamentals of the scientific research. So, 
+
+Ce module a pour objectif de permettre aux étudiants de maîtriser les bases de la recherche scientifique : recherche documentaire ciblée, analyse de documents (essentiellement en langue Anglaise), synthèse sous la forme de la rédaction d’un article, préparer et suivre un protocole expérimental et aussi l’organisation et les modes de financement de la recherche. Le module est organisé en deux volets : méthodologie de recherche et atelier d’écriture
+
+
+## Intended course learning outcomes {-}
+
+After having taking this module, you should be able to:
+
+
+ 
+## Méthodologie {-}
+
+Cet enseignement a pour objectif de permettre aux étudiants de comprendre et d’aborder :
+
+-	Comment la connaissance scientifique s’établit, se valide, se valorise et se transfère
+-	Les méthodologies de recueil et de traitement de l’information (information quantitative, qualitative…) pertinentes au regard des objectifs de recherche,
+-	Comment poser une question de recherche, sélectionner rapidement des articles pertinents dans les bases de données pour positionner la problématique et la contribution envisagée,
+-	Comment construire des cas d’étude ou des protocoles expérimentaux au regard de la nature des propositions à valider.
+-	et plus particulièrement, les théories de l’innovation et les sciences de la conception, ainsi que les revues et conférences spécialisées dans ce domaine.
+
+## Atelier d'écriture scientifique et de publications {-}
+
+Cet enseignement a pour objectif de permettre aux étudiants d’améliorer leur pratique de rédaction des rapports et mémoires (notamment pour la rédaction du mémoire de stage).
+
+
+
+![](figures/first-draft.jpg){style="width: 100%"}
+
+
+## Seances {-}
+
+Quatre séances d’enseignement aborderont les notions de recherche, veille et état de l’art, protocoles expérimentaux, analyse, traitement et présentation des données. 
+Chaque séance comporte un travail pratique à rendre à la fin de la séance. 
+
+### 1. Introduction : c’est quoi la recherche ? {-}
+
+  - Conférence recherche laboratoire et entreprise
+  - Modes de financement de la recherche 
+  - L’État de l’art et VosViewer 
+  - Réalisation d’une exploration d’un domaine scientifique avec VosViewer
+
+###	2. Concevoir et implémenter un protocole expérimental {-}
+
+  - Mise en pratique a travers l’évaluation de l’usabilité de sites web
+
+###	3. Rédaction des articles scientifiques {-}
+
+  -	Les outils de gestion bibliographique (Mendeley, Zotero ..)
+  -	Réalisation de fiches de lecture d’articles scientifiques 
+  -	Analyse et présentation des données de recherche 
+  -	Analyses statistiques 
+  -	Rédaction et présentation des résultats
+
+### 4.	Types de recherche (applique, théorique, étude de cas, expérimentation)
+  -	Les articles scientifiques : valorisation des résultats dans la recherche
+  -	Le rapport recherche et l’article état de l’art
+  -	Exemples de rapport recherche
+  -	Validation des sujets pour travail de rédaction
+
+
+### Atelier d'écriture scientifique et de publications
+
+Rédaction d’un article d’état de l’art sur un sujet donné (de préférence en lien avec le sujet/problématique de la mission de fin d’études)
+
+
+## Modalités d’évaluation {-}
+
+Chaque séance d’enseignement comporte un composant pratique, les étudiants auront un travail à réaliser et rendre à l’issue de chaque séance : veille scientifique avec VosViewer, mise en pratique d’un protocole expérimental, analyse et présentation des résultats expérimentales.
+
+Pour la partie écriture, le rendu sera fourni sous la forme d’une publication « état de l’art » qui sera évaluée par deux relecteurs de l’équipe pédagogique. 
+
+
+### Acknowledgments {.appendix} {-}
+
+Ce module est un *Working in Progress*  et egalement il est en mode open source. 
+
+
+
+
