@@ -58,11 +58,84 @@ In addition the <i class="fa fa-github fa-lg"></i> icon in the top right of the 
 
 
 
-## Remember {-}
+## Self guided learning {-}
+
+> It’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.
 
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">You&#39;re doing it right if you get frustrated: if you&#39;re not frustrated, you&#39;re (probably) not stretching yourself mentally</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/565516733516349441?ref_src=twsrc%5Etfw">11. Februar 2015</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 <br/>
+
+
+The lectures and practicals of this worskshop only form a part of the learning process. 
+You are invited to undertake wider reading and explore new methods and approaches. 
+We have provided guidance on useful resources throughout the course to use as a starting point but you are encouraged to go beyond our recommedations and fully engage with the world of open sience and visualisation techniques.
+
+### Additional valuable resources {-}
+
+You can also go through other free resources including: 
+
+In french: 
+
+<div class="col2">
+
+* [STAT 545](https://stat545.com/index.html#other-contributors)
+* [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/)
+* [Hadley Wickham](https://twitter.com/hadleywickham)
+* [Alison Presmanes Hill](https://twitter.com/apreshill)
+* [Desirée De Leon](https://twitter.com/dcossyle)
+* [Yihui Xie](https://twitter.com/xieyihui)
+* [Robin Lovelace](https://twitter.com/robinlovelace)
+* [Twitter for R programmers](https://www.t4rstats.com/index.html)
+* [Matt Ng](https://twitter.com/mattnkm)
+* [StatQuest with Josh Starmer](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
+* [Julia Silge](https://twitter.com/juliasilge)
+* [Jenny Bryan](https://twitter.com/JennyBryan)
+* [Garrick Aden‑Buie](https://twitter.com/grrrck)
+</div><br/>
+
+
+In english: 
+
+<div class="col2">
+
+* [Free RStudio Education resources](https://education.rstudio.com)
+* [Codeacademy](https://www.codecademy.com/learn/learn-r)
+* [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+</div><br/>
+
+In spanish:
+
+<div class="col2">
+
+* [Free RStudio Education resources](https://education.rstudio.com)
+* [Codeacademy](https://www.codecademy.com/learn/learn-r)
+* [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+</div><br/>
+
+::: {.content-box-green data-latex="{note}"}
+
+Let's know if you find something valuable in your learning process to add here 
+
+:::
+
+
+At the end of every practical there is a link anonymous Google feeback form, let us know if something is unclear and we will go over it in a future session.
+
+
+## Noticed a mistake? {-}
+
+No one is perfect, if you notice a mistake let us know through the [GitHub issues tab](https://github.com/LF2L/ensgsi-research-methods/issues)
+
+Don't worry if you are unsure about what GitHub is we cover it in the course.
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,10 @@
+# Assignments for ARCHE Plateform {-}
+
+Ate the end of the day,
+
+Imagine that each exercise will be run sprint. So, each exercise proposed here are going to be **sprints** (using Agile methodology jargo :smile:!) 
+you will need to upload the following results.
+
 # Introduction
 
 ## Presentation

@@ -1,12 +1,14 @@
-remember
 introduction
 presentation
 types-de-recherche-applique-théorique-étude-de-cas-expérimentation
 atelier-décriture-scientifique-et-de-publications-1
 introduction-1
 presentation-1
-introduction-2
+introduction-to-github
+purpose-of-github
 presentation-2
-introduction-3
+task-for-arche
+introduction-2
 presentation-3
 references
+author

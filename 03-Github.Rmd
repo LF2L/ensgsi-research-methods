@@ -1,5 +1,11 @@
-# Introduction
+# (PART\*) Exercises {-}
+
+
+# Introduction to Github
+
+## Purpose of Github
 
 ## Presentation
 
-Aqui va la presentacion
+
+## Task for ARCHE
