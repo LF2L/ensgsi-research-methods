@@ -1,4 +1,4 @@
-# Sofware setup  {-}
+# Software setup  {-}
 
 
 

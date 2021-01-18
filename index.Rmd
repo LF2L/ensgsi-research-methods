@@ -40,6 +40,8 @@ knitr::opts_chunk$set(echo = FALSE)
 require(tidyverse)
 require(xaringan)
 require(xaringanExtra)
+require(fontawesome)
+
 
 ```
 

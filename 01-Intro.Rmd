@@ -1,14 +1,4 @@
-# Assignments for ARCHE Plateform {-}
-
-At the end of the day,
-
-Imagine that each exercise will be run sprint. So, each exercise proposed here are going to be **sprints** (using Agile methodology jargo :smile:!) 
-you will need to upload the following results.
-
-
-
 # Introduction on Open science {-}
-
 ## Presentation {-}
 
 
@@ -33,71 +23,13 @@ After having taking this module, you should be able to:
 
 
  
-## Méthodologie {-}
-
-Cet enseignement a pour objectif de permettre aux étudiants de comprendre et d’aborder :
-
--	Comment la connaissance scientifique s’établit, se valide, se valorise et se transfère
--	Les méthodologies de recueil et de traitement de l’information (information quantitative, qualitative…) pertinentes au regard des objectifs de recherche,
--	Comment poser une question de recherche, sélectionner rapidement des articles pertinents dans les bases de données pour positionner la problématique et la contribution envisagée,
--	Comment construire des cas d’étude ou des protocoles expérimentaux au regard de la nature des propositions à valider.
--	et plus particulièrement, les théories de l’innovation et les sciences de la conception, ainsi que les revues et conférences spécialisées dans ce domaine.
-
-## Atelier d'écriture scientifique et de publications {-}
-
-Cet enseignement a pour objectif de permettre aux étudiants d’améliorer leur pratique de rédaction des rapports et mémoires (notamment pour la rédaction du mémoire de stage).
-
-
-
-![](figures/first-draft.jpg){style="width: 100%"}
-
-
-## Seances {-}
-
-Quatre séances d’enseignement aborderont les notions de recherche, veille et état de l’art, protocoles expérimentaux, analyse, traitement et présentation des données. 
-Chaque séance comporte un travail pratique à rendre à la fin de la séance. 
-
-### 1. Introduction : c’est quoi la recherche ? {-}
-
-  - Conférence recherche laboratoire et entreprise
-  - Modes de financement de la recherche 
-  - L’État de l’art et VosViewer 
-  - Réalisation d’une exploration d’un domaine scientifique avec VosViewer
-
-###	2. Concevoir et implémenter un protocole expérimental {-}
-
-  - Mise en pratique a travers l’évaluation de l’usabilité de sites web
-
-###	3. Rédaction des articles scientifiques {-}
-
-  -	Les outils de gestion bibliographique (Mendeley, Zotero ..)
-  -	Réalisation de fiches de lecture d’articles scientifiques 
-  -	Analyse et présentation des données de recherche 
-  -	Analyses statistiques 
-  -	Rédaction et présentation des résultats
-
-### 4.	Types de recherche (applique, théorique, étude de cas, expérimentation)
-  -	Les articles scientifiques : valorisation des résultats dans la recherche
-  -	Le rapport recherche et l’article état de l’art
-  -	Exemples de rapport recherche
-  -	Validation des sujets pour travail de rédaction
-
-
-### Atelier d'écriture scientifique et de publications
-
-Rédaction d’un article d’état de l’art sur un sujet donné (de préférence en lien avec le sujet/problématique de la mission de fin d’études)
-
-
-## Modalités d’évaluation {-}
-
-Chaque séance d’enseignement comporte un composant pratique, les étudiants auront un travail à réaliser et rendre à l’issue de chaque séance : veille scientifique avec VosViewer, mise en pratique d’un protocole expérimental, analyse et présentation des résultats expérimentales.
-
-Pour la partie écriture, le rendu sera fourni sous la forme d’une publication « état de l’art » qui sera évaluée par deux relecteurs de l’équipe pédagogique. 
+## ARCHE or not ARCHE?
 
 
 ### Acknowledgments {.appendix} {-}
 
-Ce module est un *Working in Progress*  et egalement il est en mode open source. 
+This module is always a *Working in Progress*. 
+Given the fact that you will use it, and undertand, let us know you opinion on github. 
 
 
 

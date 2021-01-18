@@ -1,0 +1,28 @@
+# Assignments for ARCHE Plateform {-}
+
+Imagine this module a marathon with many **sprints** (using Agile methodology jargo `r fa("smile")`!).
+Therefore,  the purpose is that each exercise will give you a particular concept, with a particular result at the end.
+
+We did each sprint with a visual presentation to follow the task.
+After that, several questions or quest will be proposed. 
+
+Some of the results are going to be upload to the ARCHE Plateform to evaluate the comprenhension of the module;
+
+You will need to upload the following results.
+
+
+
+## Final rapport of Scientifique publications {-}
+
+At the end of this module, you will capable to write scientific papers and introduce some reproducible grafics. Nevertheless, take into our mind that:
+
+
+![](figures/first-draft.jpg){style="width: 100%"}
+
+We hope that the you can develope using some of the concepts presented here.
+
+
+
+
+
+
