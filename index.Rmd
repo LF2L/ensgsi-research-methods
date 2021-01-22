@@ -1,7 +1,7 @@
 --- 
 title: "Innovation, Developpment et Recherche"
 description: "Reproducible research module 2021"
-author: Fabio CRUZ, Giovanny ARBELAEZ et Mauricio CAMARGO^[https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/]
+author: Fabio CRUZ^[https://erpi.univ-lorraine.fr/people/Fabio-Cruz/], Giovanny ARBELAEZ^[https://erpi.univ-lorraine.fr/people/Giovanny-Arbelaez/] et Mauricio CAMARGO^[https://erpi.univ-lorraine.fr/people/Mauricio-Camargo/]
 # author:
 #   - first_name: "Mauricio"
 #     last_name: "Camargo"
@@ -47,20 +47,20 @@ require(fontawesome)
 
 
 
-# Bonjour ! {-}
+# Bonjour à tous ! {-}
 
-## Hello Students {-}
 
  <img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Various/People/educator.jpg" width="120" alt="Introductions course" align="right" style="margin: 0 1em 0 1em" /> We give you a warm welcome to the module of reproducible research for in ENSGSI master course.
 
 We care for open science and open practices.
-Thus, this website is hosted on GitHub and holds all the practical instructions and data. 
+Thus, this website is hosted on GitHub, a open source plateform, where you will find the source documents and holds all the practical instructions and data. 
 
 
 
-## Acknowledgements ans Inspirations {-}
+## Acknowledgements and Inspirations {-}
 
-Thanks to the following people who have either contributed directly or provided code in repositories that have helped me style this book:
+This an introductory workshop on open data science course.
+Thus, we have taken inspiration of many people around the world and we thank to the following people (list not exhaustive) who have either contributed or provided code in repositories that have helped us style this book:
 
 <div class="col2">
 
@@ -79,9 +79,12 @@ Thanks to the following people who have either contributed directly or provided 
 * [Garrick Aden‑Buie](https://twitter.com/grrrck)
 </div><br/>
 
-The R package and analysis artwork used within this book has been produced by [allison_horst](https://twitter.com/allison_horst), whilst artwork used in information boxes has been produced by [Desirée De Leon](https://twitter.com/dcossyle). You can find Allison's images on the [stats illustration GitHub repository](https://github.com/allisonhorst/stats-illustrations) and Desirée's on the [rstudio4edu GitHub repository](https://github.com/rstudio4edu/rmd4edu).
+The R package and analysis artwork used within this book has been produced by
 
-I've certainly learnt a lot from their open code repositories!
+[allison_horst](https://twitter.com/allison_horst), whilst artwork used in information boxes has been produced by [Desirée De Leon](https://twitter.com/dcossyle). 
+You can find Allison's images on the [stats illustration GitHub repository](https://github.com/allisonhorst/stats-illustrations) and Desirée's on the [rstudio4edu GitHub repository](https://github.com/rstudio4edu/rmd4edu).
+
+I (Fabio) have certainly learnt a lot from their open code repositories!
 
 
 

@@ -1,18 +1,1 @@
-# Software setup  {-}
-
-
-
-Before we jump to the workshop, we need to assure that each one of you, have access to R software.
-So, two options are proposed before the day
-
-There are two main sofware that you need to get: 1) Github and 2) R project.
-
-
-## Github
-
-## Option 1 (Recommended):  Rstudio Cloud
-
-
-
-
-## Option 2 (Recommended):  R & Rstudio Local
+# Get

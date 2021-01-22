@@ -1,4 +1,9 @@
 book_filename: "Reproducible research An Introduction"
+# rmd_files:
+# - index.Rmd
+# - 00-course_info.Rmd
+# - 00-Software.Rmd
+# - 00-usage.Rmd
 output_dir: "docs"
 delete_merged_file: true
 language:

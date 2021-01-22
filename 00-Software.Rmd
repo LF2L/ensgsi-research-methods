@@ -1,0 +1,64 @@
+# Software installation {-}
+
+Before we jump to the workshop, we need to assure that each one of you will  have access to software that will be used.
+There are two main software that you need to get: 
+
+1. Github 
+2. R project.
+
+
+So, two options are proposed. **Please, do these steps before the day of the workshop**.
+If questions or problems, let us know as soon as possible
+
+
+Before the day of the course, we advise you to get functional access to these software / and platforms. 
+
+
+## Setup 1 (Reccomended):  {-}
+
+### Github account {-}
+
+1. Go to the github plateform: https://github.com/ 
+2. Create an account using your UL email.
+3. Recommendations:
+  - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your cv. 
+  - Put your photo, a description of who you are.
+  - Use a profesiona nickname.
+  
+### Rstudio Cloud account {-}
+
+1. Sign up for Rstudio Cloud Free version: https://rstudio.cloud/
+2. Use you github account!
+3. Voila!, C'est bon
+
+RStudio Cloud is a webpage, so no installation is required. 
+However, as you have notice, there is some restrictions in the quantity of project and the virtual machine assigned to you. 
+It's the best option to get start!
+
+
+However, if you feel capable to take the path of the warrior..
+
+## Setup 2 (For Warriors) {-}
+
+### Installing Git in your machine {-} 
+
+1. Go to Git https://git-scm.com/downloads
+2. Install you according to your machine (Windows, MacOs, Linux)
+3. Eventually install github desk
+
+### R & Rstudio Local {-}
+
+#### R {-}
+
+1. Go to R-Project https://www.r-project.org/ and click on [download R](http://cran.r-project.org/mirrors.html).
+2.Got to France, and select the a Mirror (Univ-lyon works normally well!)
+2.Download according your machine and install
+
+#### Rstudio {-}
+
+1. You can install R Studio on your own machine from: https://www.rstudio.com/products/rstudio/download/#download
+
+
+RStudio is a free and open-source integrated development environment for R --- 
+it makes R much easier to use.
+

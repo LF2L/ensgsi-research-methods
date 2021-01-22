@@ -1,7 +1,5 @@
 arche-or-not-arche
-github
-option-1-recommended-rstudio-cloud
-option-2-recommended-r-rstudio-local
+get
 introduction-to-github
 purpose-of-github
 presentation-1
