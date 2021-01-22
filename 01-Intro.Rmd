@@ -1,5 +1,6 @@
-# Introduction on Open science {-}
-## Presentation {-}
+# (PART\*) A new world: Open science {-}
+
+# Presentation {-}
 
 
 ```{r embed-xaringan, echo=FALSE}
@@ -9,27 +10,16 @@ embed_xaringan(url = "slides/00-Open-science/index.html", ratio = "16:9")
 ```
 
 
-## Goals of the Seance {-}
+
+## Additional lecture for your curiosity {-}
 
 
->The main  goal of this module is to enable the students to konw the fundamentals of the scientific research. So, 
+- Chalmers, A. F., & Biezunski, M. (1990). Qu’est-ce que la science ? : récents développements en philosophie des sciences : Popper, Kuhn, Lakatos, Feyerabend. Librairie générale française.
 
-Ce module a pour objectif de permettre aux étudiants de maîtriser les bases de la recherche scientifique : recherche documentaire ciblée, analyse de documents (essentiellement en langue Anglaise), synthèse sous la forme de la rédaction d’un article, préparer et suivre un protocole expérimental et aussi l’organisation et les modes de financement de la recherche. Le module est organisé en deux volets : méthodologie de recherche et atelier d’écriture
+- Sekaran, Bougie. 2016. Research Methods For Business: A Skill Building Approach. Wiley & sons.
 
+- Sørensen, Flemming, Jan Mattsson, and Jon Sundbo. 2010. Experimental Methods in Innovation Research. Research Policy 39 (3): 313–22.
 
-## Intended course learning outcomes {-}
-
-After having taking this module, you should be able to:
-
-
- 
-## ARCHE or not ARCHE?
-
-
-### Acknowledgments {.appendix} {-}
-
-This module is always a *Working in Progress*. 
-Given the fact that you will use it, and undertand, let us know you opinion on github. 
 
 
 

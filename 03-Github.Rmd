@@ -1,6 +1,6 @@
-# (PART\*) Exercises {-}
+# Understanding Github 
 
-# Introduction to Github
+## Introduction to Github
 
 ## Purpose of Github
 
@@ -8,3 +8,4 @@
 
 
 ## Task for ARCHE
+No, easy.. we are cool in this sprint :)

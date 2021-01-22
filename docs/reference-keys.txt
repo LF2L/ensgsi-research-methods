@@ -1,9 +1,8 @@
-arche-or-not-arche
-get
+warrior-path-an-overview
+understanding-github
 introduction-to-github
 purpose-of-github
 presentation-1
 task-for-arche
-introduction
+rmarkdown
 presentation-2
-references

@@ -106,11 +106,11 @@ In english:
 
 </div><br/>
 
-In spanish:
+En Español:
 
 * [Metadocencia](https://www.metadocencia.org/)
 
-
+- [R Coder](https://r-coder.com/)
 
 
 <div class="col2">

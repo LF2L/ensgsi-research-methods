@@ -3,8 +3,11 @@
 Before we jump to the workshop, we need to assure that each one of you will  have access to software that will be used.
 There are two main software that you need to get: 
 
+
 1. Github 
 2. R project.
+
+
 
 
 So, two options are proposed. **Please, do these steps before the day of the workshop**.
