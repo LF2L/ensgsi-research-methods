@@ -42,7 +42,6 @@ require(xaringan)
 require(xaringanExtra)
 require(fontawesome)
 
-
 ```
 
 

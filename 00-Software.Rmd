@@ -51,10 +51,10 @@ However, if you feel capable to take the path of the warrior..
 
 ### R & Rstudio Local {-}
 
-#### R {-}
+#### Install R {-}
 
 1. Go to R-Project https://www.r-project.org/ and click on [download R](http://cran.r-project.org/mirrors.html).
-2.Got to France, and select the a Mirror (Univ-lyon works normally well!)
+2.Go to France, and select a Mirror (Univ-lyon works normally well!)
 2.Download according your machine and install
 
 #### Rstudio {-}

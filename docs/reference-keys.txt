@@ -1,8 +1,8 @@
-warrior-path-an-overview
-understanding-github
-introduction-to-github
-purpose-of-github
+overview-of-the-sprints
+we-practice-what-we-preach
+understanding-git-and-github
 presentation-1
+steps-to-do
 task-for-arche
 rmarkdown
 presentation-2

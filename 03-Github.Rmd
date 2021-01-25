@@ -1,11 +1,30 @@
-# Understanding Github 
-
-## Introduction to Github
-
-## Purpose of Github
+# Understanding Git and Github 
 
 ## Presentation
+
+```{r , echo=FALSE, include=TRUE}
+embed_xaringan(url = "slides/01-Github/index.html", ratio = "16:9")
+```
+
+
+
+## Steps to do
+
+1. Go to http://github.com, create a new repository (call it  like - ‘Reproducible_research_ENSGSI_2021’ or something similar), making sure it is public and you check the box that says ‘initialise new repository with a README’ — click ‘create repository’ at the bottom
+
+
+2. The new repository (‘repo’) will be created and this is where you will be able to store all you code online. You will notice that a `README.md` markdown file has also been created. 
+This can be edited to tell people what they are likely to find in this repository.
+
+- Give some details on the 
+
+3.
+
 
 
 ## Task for ARCHE
 No, easy.. we are cool in this sprint :)
+
+
+
+

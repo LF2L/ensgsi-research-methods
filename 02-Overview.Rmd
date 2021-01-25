@@ -1,5 +1,12 @@
 # (PART\*) Exercises {-}
 
-# Warrior path: An overview
+# Overview of the Sprints
 
-This is the chemin
+Each sprint willl be consisted in a practical task to do.
+A presentation will presented with the stept by step you can go through.
+
+
+
+# We practice what we preach! 
+
+This site is created with Git and R markdown, using the bookdown package. Go ahead and peek behind the scenes.

@@ -1,0 +1,150 @@
+---
+title: "Introduction to Git and Github"
+subtitle: "⚔<br/>with xaringan"
+author: "Fabio CRUZ"
+institute: "Université de Lorraine"
+date: "2021/02/01 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://www.fabbiocrux.com/xaringan/macros.js"
+---
+
+
+
+```{r , echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = FALSE)
+xaringanExtra::use_share_again()
+```
+
+# Learning outcomes
+
+By the end of this practical you should be able to:
+
+- Explain the use of and differences between Git and GitHub
+- Create reproducible and open R code
+
+
+---
+# The problem
+
+.pull-left[
+- I hope we all know this issue when the deadline is comming...
+]
+.pull-right[
+```{r, include=TRUE, fig.align='center'}
+knitr::include_graphics("http://phdcomics.com/comics/archive/phd052810s.gif")
+```
+source: Jorge Cham -Phdcomics.com
+]
+
+---
+class: middle
+
+### The solution... 
+
+
+---
+
+# Version control
+
+- **Version control** is not strictly necessary for *reproducibility*, but it can be hugely useful for *sanity* (and for managing collaborative projects, and for long-term efficiency).
+
+The promise with formal version control:
+.pull-left[
+- Can make it easier to explore the history of changes.
+- Enables you to go back to an earlier state to find the source of a bug
+- Allows you to try things out without worrying about breaking the things that work.
+- Can make it easier to incorporate changes from collaborators, even if you’re all making simultaneous changes to the same set of files.
+]
+
+
+
+---
+
+# Using Git
+
+.pull-left[
+**Git is a version control system**. 
+
+- Its original purpose was to help groups of developers work collaboratively on big software projects. 
+
+- Git manages the evolution of a set of files – called a **repository** – in a sane, highly structured way. 
+
+]
+.pull-right[
+```{r, include=TRUE, fig.align='center'}
+knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
+```
+]
+
+.content-box-green[
+If you have no idea what I’m talking about, think of it as the **“Track Changes”** features from Microsoft Word on steroids
+
+]
+
+
+---
+
+# What is Github
+
+.pull-left[
+- Github is like facebook for programmers. Everyone’s on there. You can look at what they’re working on and easily peruse their code and make suggestions or changes.
+
+- This is where hosting services like GitHub, Bitbucket, and GitLab come in. 
+]
+
+.pull-right[
+```{r, include=TRUE, fig.align='center'}
+knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
+```
+]
+
+.content-box-green[
+If you have no idea what I’m talking about, think of it as **DropBox** but much, much better !. 
+]
+
+---
+
+# Is it going to hurt use Github?
+
+Yes, 
+
+--
+Version control is a tough sell.
+--
+
+It requires a big initial investment in time and effort, initial experiences are often rocky, and the advantages are mostly long-term.
+
+**but**
+
+--
+.content-box-green[
+We'll start baby steps by putting a single project under version control. 
+
+] 
+---
+# What is the payoff?
+
+ And it may seem like a big day-to-day hassle, though trust me that, after a month or so, it will become a natural part of your daily workflow.
+
+
+
+
+
+---
+
+# Useful material to look
+
+- [Happy git and Github for the useR](https://happygitwithr.com/big-picture.html)
+- [Material from Karl Broman](https://kbroman.org/github_tutorial/pages/why.html)
+
+
+
+
