@@ -1,8 +1,6 @@
-overview-of-the-sprints
-we-practice-what-we-preach
-understanding-git-and-github
+understanding-the-software-git-and-github-and-rstudio-cloud
 presentation-1
-steps-to-do
+rcloud
 task-for-arche
 rmarkdown
 presentation-2

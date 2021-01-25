@@ -7,7 +7,7 @@ date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["default", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
+    css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
       highlightStyle: github
@@ -32,29 +32,45 @@ By the end of this practical you should be able to:
 
 
 ---
+class: middle, left
+background-image: url("http://phdcomics.com/comics/archive/phd052810s.gif")
+background-position: 105% 50%
+background-size: 60%
+
+
 # The problem
 
 .pull-left[
 - I hope we all know this issue when the deadline is comming...
 ]
-.pull-right[
-```{r, include=TRUE, fig.align='center'}
-knitr::include_graphics("http://phdcomics.com/comics/archive/phd052810s.gif")
-```
-source: Jorge Cham -Phdcomics.com
-]
 
 ---
 class: middle
 
-### The solution... 
+--
+
+
+Those are the days where you would say yourself that it won't happen again.. 
+so.. for that
+
+---
+
+
+# The solution... 
+
+
+--
+
+
+# Version control
 
 
 ---
 
 # Version control
 
-- **Version control** is not strictly necessary for *reproducibility*, but it can be hugely useful for *sanity* (and for managing collaborative projects, and for long-term efficiency).
+
+- It is not strictly necessary for *reproducibility*, but it can be hugely useful for *sanity* (and for managing collaborative projects, and for long-term efficiency).
 
 The promise with formal version control:
 .pull-left[
@@ -64,7 +80,15 @@ The promise with formal version control:
 - Can make it easier to incorporate changes from collaborators, even if you’re all making simultaneous changes to the same set of files.
 ]
 
+.pull-right[
+```{r, include=TRUE, fig.align='center', cache=TRUE}
+knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
+```
 
+More details: 
+
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+]
 
 ---
 
@@ -79,18 +103,47 @@ The promise with formal version control:
 
 ]
 .pull-right[
+
 ```{r, include=TRUE, fig.align='center'}
 knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
 ```
+
 ]
 
-.content-box-green[
+.infobox.tip[
 If you have no idea what I’m talking about, think of it as the **“Track Changes”** features from Microsoft Word on steroids
-
 ]
 
 
 ---
+
+class: middle 
+
+## Attention
+
+.infobox.caution[
+
+Git normaly use command line tools (aka `Terminal` commands).
+For the purpose of this workshop, we are not going to use this tools directly.
+
+However, we suggest that people interested get to know a 
+
+Take a look at: 
+- [Git's Official documentation](https://git-scm.com/docs)
+- [Happy git with R](https://happygitwithr.com/git-intro.html)
+] 
+
+
+
+
+---
+
+# Git commands
+
+
+
+---
+
 
 # What is Github
 
@@ -101,7 +154,7 @@ If you have no idea what I’m talking about, think of it as the **“Track Chan
 ]
 
 .pull-right[
-```{r, include=TRUE, fig.align='center'}
+```{r, include=TRUE, fig.align='center', cache=TRUE}
 knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
 ```
 ]

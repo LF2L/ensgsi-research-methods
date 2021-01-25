@@ -17,16 +17,6 @@ If questions or problems, let us know as soon as possible
 Before the day of the course, we advise you to get functional access to these software / and platforms. 
 
 
-## Setup 1 (Reccomended):  {-}
-
-### Github account {-}
-
-1. Go to the github plateform: https://github.com/ 
-2. Create an account using your UL email.
-3. Recommendations:
-  - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your cv. 
-  - Put your photo, a description of who you are.
-  - Use a profesiona nickname.
   
 ### Rstudio Cloud account {-}
 
