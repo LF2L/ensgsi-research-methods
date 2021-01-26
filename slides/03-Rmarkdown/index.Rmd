@@ -1,0 +1,33 @@
+---
+title: "Rmarkdown for a better world"
+subtitle: " "
+author: "Fabio CRUZ"
+institute: "Université de Lorraine"
+date: "2021/02/01 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://www.fabbiocrux.com/xaringan/macros.js"
+---
+
+
+# I'm assuming...
+
+You have working versions of:
+
+- Github
+- RStudio
+
+
+So let's start
+
+---
+
+
+

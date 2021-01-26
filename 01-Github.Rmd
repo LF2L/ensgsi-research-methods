@@ -1,0 +1,34 @@
+# (PART\*) Exercises {-}
+
+# Understanding the software Git and Github and Rstudio Cloud
+
+## Presentation
+
+```{r , echo=FALSE, include=TRUE}
+embed_xaringan(url = "slides/01-Github/index.html", ratio = "16:9")
+```
+
+
+At the end, We suppose that: 
+
+1. You have created your account (following the steps), 
+2. You are aware of git and Github.
+
+
+
+
+
+
+2. The new repository (‘repo’) will be created and this is where you will be able to store all you code online. You will notice that a `README.md` markdown file has also been created. 
+This can be edited to tell people what they are likely to find in this repository.
+
+- Give some details on the 
+
+
+
+## Task for ARCHE
+No, easy.. we are cool in this sprint :)
+
+
+
+

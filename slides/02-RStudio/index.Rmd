@@ -1,0 +1,175 @@
+---
+title: "R & Rstudio"
+subtitle: "an Introduction"
+author: "Fabio CRUZ"
+institute: "Université de Lorraine"
+date: "2021/02/01 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://www.fabbiocrux.com/xaringan/macros.js"
+---
+
+
+
+```{r , echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = FALSE)
+xaringanExtra::use_share_again()
+
+library(fontawesome)
+
+```
+
+
+# Learning outcomes
+
+At the end of this
+
+- You will have a first encounter with R & Rstudio software and its importance for open science
+- You will have a basic understanding of the main functions
+
+
+---
+
+# What is R?
+
+The R Project for Statistical Computing
+
+.pull-left[
+- R’s mission is to enable the best and most thorough exploration of data possible . 
+- It is a dialect of the S language, developed at Bell Laboratories
+
+- ACM noted that S “will forever alter the way people analyze, visualize, and manipulate data”
+]
+.pull-right[
+```{r, include=TRUE, fig.align='center', out.width='200px', cache=TRUE,}
+knitr::include_graphics("https://www.r-project.org/Rlogo.png")
+```
+https://www.r-project.org/
+
+]
+
+---
+
+# What is RStudio
+
+.pull-left[
+RStudio is an integrated development environment (IDE) that provides an interface by adding many convenient features and tools.
+]
+.pull-right[
+```{r, include=TRUE, fig.align='center', out.width='300px', cache=TRUE}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png")
+```
+]
+
+---
+
+# R vs RStudio
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("https://moderndive.netlify.app/images/shutterstock/R_vs_RStudio_1.png")
+```
+
+---
+
+
+# Using Rstudio Cloud account (Recommended)
+
+.left-column[ 
+1. Sign up for Rstudio Cloud Free version: https://rstudio.cloud/
+
+2. Use you github account!
+
+3. Voila!, C'est bon
+
+]
+
+.right-column[ 
+
+Image
+
+]
+
+
+
+---
+
+
+## Rstudio Cloud account
+
+
+.infobox.important[
+**RStudio Cloud is a webpage**, so no installation is required. 
+
+However, as you have notice, there is some restrictions in the quantity of project and the virtual machine assigned to you.  It's the best option to get start!]
+
+---
+
+
+# Understanding Rstudio Interface
+
+.left-column[
+
+
+]
+
+---
+
+# First is first: Console
+
+
+---
+class: middle
+
+# Hands on the PC!
+
+---
+
+# Primers with Rstudio 
+
+.infobox.assignment[ **Objective**
+
+- This tutorial will learn you the basic skills to understand R languages.
+You will need in each analysis: how to inspect, visualize, subset, and transform your data, as well as how to **run code** with the basic functions.
+
+We'll concentrate our attention to this final element, How to **run code** and the basic functions. 
+
+]
+**Timming**: 20 Mins. `r icon::fa("check-circle")`
+
+---
+
+# Primers with Rstudio 
+
+
+.left-column[
+
+1. Go to [Rstudio Primers](https://rstudio.cloud/learn/primers/1.2)
+
+2. Complete the tutorial
+
+3. While you are completing, 
+]
+.right-column[
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/Rstudio-primers-00.jpg")
+```
+]
+
+
+---
+
+class: middle center
+
+you finish?.. good!
+
+## Take 5 min for coffe :)
+
+
+---

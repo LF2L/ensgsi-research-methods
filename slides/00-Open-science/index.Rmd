@@ -15,7 +15,195 @@ output:
       countIncrementalSlides: false
 ---
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+## Music Vs. Research
+
+.pull-left[
+![](images/Musica.jpeg)
+]
+.pull-right[
+![](images/Paper.png)
+]
 
 
 ---
+
+## Music Vs. Research
+
+.pull-left[
+![](images/excel-chaos.jpg)
+]
+.pull-rigth[
+![](images/Paper.png)
+]
+
+---
+
+# Main goal
+
+- Understand the importance of the *replication principle* in research
+- Create a first dynamic document using a *Literate programming approach*
+
+
+---
+
+# The document pipeline
+
+![](images/Article-pipeline-1.png)
+
+---
+
+# The document pipeline
+
+![](images/Article-pipeline-2.png)
+
+How to describe in detail this section for Research & Industry purposes
+
+---
+
+## Reproducibility and Replicability
+
+**Reproducibility**: 
+
+Refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original researcher (Goodman, Fanelli, and Ioannidis 2016).
+
+- Focuses on the validity of the data analysis
+- "Can we trust this analysis?"
+
+.footnote[
+
+Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. “What Does Research Reproducibility Mean?” Science Translational Medicine 8 (341): 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027.
+
+]
+---``
+
+## Reproducibility and Replicability
+
+**Replicability:** 
+
+This is the act of repeating an entire study, independently of the original investigator without the use of original data (but generally using the same methods).
+
+- Important for policymakers and regulatory decisions
+
+
+---
+
+
+## Why do we need Reproducible Research?
+
+- Avoid misconduct such as fraudulent data and plagiarism
+- Data-intensive research (e.g Big data research)
+- Distributed research
+
+
+<img height="450px" class="plain" src="images/Problem-1.png">
+<img height="450px" class="plain" src="images/Problem-3.png">
+<img height="450px" class="plain" src="images/Problem-2.png">
+
+---
+
+## Reproducibility concepts
+
+Two key elements: 
+
+- **Literate programming for enabling reproducibilty**
+- Version control for enhancing transparency
+
+<img height="100%"  src="https://images-na.ssl-images-amazon.com/images/I/41KSVC8Q2JL.jpg">
+
+*...for significantly better documentation of programs, and that we can best achieve this by considering programs to be works of literature.*
+
+
+.footnote[
+D. E. Knuth, Literate Programming, The Computer Journal, Volume 27, Issue 2, 1984, Pages 97–111, https://doi.org/10.1093/comjnl/27.2.97
+]
+
+---
+
+## Literate programming for enabling reproducibilty
+
+*Literate programming refers to the use of a computing environment for authoring documents that contain a mix of natural (eg. English) and computer (eg. R) languages (Schulte et al. 2012)*
+
+![](images/Word-excel.jpg)
+
+
+.footnote[ Schulte, Eric, Dan Davison, Thomas Dye, and Carsten Dominik. 2012. “A Multi-Language Computing Environment for Literate Programming and Reproducible Research.” Journal of Statistical Software 46 (1): 1–24. https://doi.org/10.18637/jss.v046.i03.]
+
+--- 
+
+
+## Literate programming for enabling reproducibilty
+
+*Literate programming refers to the use of a computing environment for authoring documents that contain a mix of natural (eg. English) and computer (eg. R) languages (Schulte et al. 2012)*
+
+![](images/rstudio.png)
+
+#### RStudio tool
+
+.footnote[ Schulte, Eric, Dan Davison, Thomas Dye, and Carsten Dominik. 2012. “A Multi-Language Computing Environment for Literate Programming and Reproducible Research.” Journal of Statistical Software 46 (1): 1–24. https://doi.org/10.18637/jss.v046.i03.]
+
+
+---
+
+## What is R/RStudio?
+
+- R is a statistical programming language
+- RStudio is a convenient interface for R (an integrated development environment, IDE)
+
+![](images/rstudio.png)
+
+##### RStudio tool
+
+- At its simplest:<sup>➥</sup>
+    - R is like a car’s engine
+    - RStudio is like a car’s dashboard
+
+<small>Source: [Modern Dive](https://moderndive.com/)</small>
+
+---
+
+## Rmarkdown
+
+![](images/Rmarkdown.png)
+
+
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+---
+
+# Summary
+
+- Reproducible research is important as a **minimum standard**, particularly for studies that are difficult to replicate
+- Infrastructure is needed for creating and distributing reproducible documents, beyond what is currently available
+- There is a growing number of tools for creating reproducible documents
+
+**Some challengues**
+
+- It is not the solution for everyone.
+
+---
+
+# Main goal of the workshop
+
+- Create a first reproducible article 
+
+
+![](images/Phd-comics.gif)
+
+
+---
+
+class: center, middle
+
+# Thanks!
+

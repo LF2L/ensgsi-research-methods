@@ -1,0 +1,9 @@
+# Rmarkdown: The first trick!
+
+## Presentation
+
+
+```{r , echo=FALSE, include=TRUE}
+embed_xaringan(url = "slides/03-Rmarkdown/index.html", ratio = "16:9")
+```
+
