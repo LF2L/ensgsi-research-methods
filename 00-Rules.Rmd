@@ -3,17 +3,16 @@
 Imagine this module as a marathon with many **sprints** (using Agile methodology jargon `r emo::ji("smile")` !).
 Therefore,the purpose is that each exercise will give you a particular concept, with a particular result at the end.
 
-Each sprint willl be consisted in a practical task to do.
+Each sprint will consist  on a practical task to do.
 
-A presentation will be presented with an basic concepts and showing the purpose of the tool.
-Then, a tutorial will put with th step-by-step you can go through.
+A presentation will be delivered first to introduce the basic concepts and to show the purpose of the tool.
+Then, you will have a tutorial with step-by-step instructions you can go through.
 
 ## Assignments for ARCHE Plateform {-}
 
-
 After that, several questions or quest will be proposed. 
 
-Some of the results are going to be upload to the ARCHE Plateform to evaluate the comprenhension of the module.
+Some of the results are going to be upload to the ARCHE Platform to evaluate the comprehension of the module.
 
 
 :::.arche
@@ -34,14 +33,14 @@ Go ahead and peek behind the scenes.
 
 
 
-## Final rapport of Scientifique publications {-}
+## Final rapport {-}
 
-At the end of this module, you will capable to write scientific papers and introduce some reproducible graphics. Nevertheless, take into our mind that:
+At the end of this module, you will be able to write scientific papers and introduce some reproducible graphics. Nevertheless, take into account that:
 
 
 ![](figures/first-draft.jpg){style="width: 100%"}
 
-We hope that the you can develope using some of the concepts presented here.
+We hope that the you can use some of the concepts presented here.
 
 
 

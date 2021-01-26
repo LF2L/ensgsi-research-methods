@@ -58,7 +58,7 @@ Thus, this website is hosted on GitHub, a open source plateform, where you will 
 
 ## Acknowledgements and Inspirations {-}
 
-This an introductory workshop on open data science course.
+This an introductory workshop on open-data science course.
 Thus, we have taken inspiration of many people around the world and we thank to the following people (list not exhaustive) who have either contributed or provided code in repositories that have helped us style this book:
 
 <div class="col2">

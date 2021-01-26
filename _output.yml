@@ -16,7 +16,7 @@ bookdown::gitbook:
           </a>
         </li></center>
     download: [rmd]
-    edit: https://github.com/andrewmaclachlan/CASA0005repo/edit/master/%s
+    edit: https://github.com/LF2L/ensgsi-research-methods/edit/master/%s
     sharing:
       github: yes
       facebook: no
