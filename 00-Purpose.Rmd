@@ -2,7 +2,7 @@
 
 # Purpose {-}
 
-This is an introductory workshop to the use of open source software on data analysis and data visualization using `r fa("r-project", fill = "steelblue")` & Rstudio tools. 
+This is an introductory workshop to the use of open source software on data analysis and data visualization using  & Rstudio tools. 
 We try to make as easy and ongoing as possible, even for those who are not familiar with programming language. 
 
 * Nevertheless, we understand that the introduction of new tools can have been challenging in this *Virtual courses*.
