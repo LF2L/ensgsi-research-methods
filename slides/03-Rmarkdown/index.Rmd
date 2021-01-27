@@ -1,12 +1,14 @@
 ---
-title: "Rmarkdown for a better world"
-subtitle: " "
+title: "Rmarkdown"
+subtitle: "The first trick"
 author: "Fabio CRUZ"
 institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -16,6 +18,17 @@ output:
       beforeInit: "https://www.fabbiocrux.com/xaringan/macros.js"
 ---
 
+
+
+
+```{r , echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = FALSE)
+
+require(fontawesome)
+require(xaringanExtra)
+xaringanExtra::use_share_again()
+
+```
 
 # I'm assuming...
 
@@ -28,6 +41,123 @@ You have working versions of:
 So let's start
 
 ---
+
+
+# Learning outcomes
+
+At the end of this
+
+- You will produce your first reproducible document and put it online 
+- You will have a basic understanding of the main functions of Rmarkdown
+
+---
+
+# Agenda of this sprint
+
+Two elements
+
+## 1. Understanding the Rmarkdown
+
+## 2. Connecting with github to publish your work!
+
+
+
+---
+
+
+---
+background-image: url(img/screenshots/Single-rmd.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+**here**, you can see a typical single R Markdown file. <br>
+This one is for a lab for visualizing data from the Museum of Modern Art.<br>
+Let's quickly walk through some of the key parts of this file.
+
+---
+background-image: url(img/screenshots/Single-rmd0.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+It starts with **metadata**, written in `YAML`, which is a list of keys on the left and their values on the right.
+
+
+---
+background-image: url(img/screenshots/Single-rmd1.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+The first key you see is the **TITLE**, which is `Lab 02: MoMA Museum Tour`.
+
+
+---
+background-image: url(img/screenshots/Single-rmd2.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+The last YAML section is all about **output**. Here the output is an **`html_document`**.
+---
+background-image: url(img/screenshots/Single-rmd3.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+Beneath that, we can add options to our **`html_document`** 
+  - for example, a table of contents, with the key **TOC** set to **TRUE**. 
+
+---
+background-image: url(img/screenshots/Single-rmd4.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+So that's the metadata, but the real meat in your R Markdown file 
+is text written in **markdown**...
+
+
+
+---
+Markdown
+
+
+
+---
+background-image: url(img/screenshots/Single-rmd5.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+
+and your code, written in R. So these 3 things: (1) **Metadata**, (2) *Text*, and (3) **Code** make up an *R Markdown* document.
+
+---
+
+class: top center
+
+<video width="1530" height="610" controls>
+<source src="img/single-doc-knit.mp4" type="video/mp4"> 
+</video>
+
+
+The real magic happens, when you click on the `**Knit icon**`, and see your file turned into HTML. 
+
+---
+
+
+
+
+
+
 
 
 

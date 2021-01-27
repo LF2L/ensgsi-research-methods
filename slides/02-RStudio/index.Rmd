@@ -8,6 +8,7 @@ output:
   xaringan::moon_reader:
     self_contained: true
     lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -22,9 +23,9 @@ output:
 ```{r , echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
+require(fontawesome)
 require(xaringanExtra)
 xaringanExtra::use_share_again()
-
 
 ```
 
@@ -35,6 +36,16 @@ At the end of this
 
 - You will have a first encounter with R & Rstudio software and its importance for open science
 - You will have a basic understanding of the main functions
+
+---
+
+# Agenda of this sprint
+
+Two elements
+
+## 1. Understanding the Console in R
+
+## 2. Data Visualization: an Intro
 
 
 ---
@@ -143,20 +154,20 @@ You will need in each analysis: how to inspect, visualize, subset, and transform
 We'll concentrate our attention to this final element, How to **run code** and the basic functions. 
 
 ]
-**Timming**: 20 Mins. `r icon::fa("check-circle")`
+## Timming: 20 Mins. `r fa("clock")` 
 
 ---
 
-# Primers with Rstudio 
+# Hands on with Rstudio 
 
 
 .left-column[
 
-1. Go to [Rstudio Primers](https://rstudio.cloud/learn/primers/1.2)
+1. Go to [this first this tutorial](https://rstudio.cloud/learn/primers/1.2)
 
 2. Complete the tutorial
 
-3. While you are completing, 
+3. While you are completing, answers the questions .
 ]
 .right-column[
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
@@ -171,7 +182,67 @@ class: middle center
 
 you finish?.. good!
 
-## Take 5 min for coffe :)
+## Take 5 min for coffe `r fa("coffee")` 
 
 
 ---
+
+class: middle center
+
+# 2. Data Visualization 
+
+## An intro
+We are ba
+
+
+---
+
+# What is data visualization
+
+
+---
+
+## Why is it important
+
+
+---
+
+# Hands on with Rstudio 
+
+
+.left-column[
+
+1. Go to [tutorial on Data Visualization basics](https://rstudio.cloud/learn/primers/1.1)
+
+2. Complete the tutorial
+
+3. While you are completing, answers the questions of section #2.
+]
+.right-column[
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("img/Rstudio-primers-01.jpg")
+```
+]
+
+
+
+---
+
+class: middle center
+
+Put the result of these first two elements on github! 
+
+---
+
+class: middle center
+
+you finish?.. good!
+
+## Take 10 min for a luch  `r fa("apple-alt")` 
+
+### Let's move to the other Sprint!
+
+---
+
+
+
