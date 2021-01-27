@@ -6,7 +6,8 @@ institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
     css: ["default", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -17,13 +18,14 @@ output:
 
 
 
-```{r share-again, echo=FALSE}
+```{r , echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = FALSE)
+
+require(xaringanExtra)
 xaringanExtra::use_share_again()
+
 ```
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
 
 
 ## Music Vs. Research

@@ -6,7 +6,8 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -20,8 +21,12 @@ output:
 
 ```{r , echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
+
+require(xaringanExtra)
 xaringanExtra::use_share_again()
+
 ```
+
 
 # Learning outcomes
 
