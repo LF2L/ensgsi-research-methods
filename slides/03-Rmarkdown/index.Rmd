@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    self_contained: true
-    lib_dir: "../../libs"
-#    lib_dir: libs
+#    self_contained: true
+#    lib_dir: "../../libs"
+    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -153,8 +153,74 @@ The real magic happens, when you click on the `**Knit icon**`, and see your file
 
 ---
 
+background-image: url(img/screenshots/Single-knit1.png)
+background-position: 50% 5px
+background-size: 70%
+class: middle, bottom
+
+Here is what we knit. 
+
+--
+
+<img src="img/screenshots/Single-knit2.png" style="
+  position: absolute; 
+  width: 91%; 
+  top: -53px;
+  right: 5px;
+">
 
 
+Using the **`THEME:`** key in our YAML, we changed our font and colors.
+
+--
+
+<img src="img/screenshots/Single-knit3.png" style="
+  position: absolute; 
+  width: 97%; 
+  top: -45px;
+  right: -51px;
+">
+
+
+--
+
+<img src="img/screenshots/Single-knit4.png" style="
+  position: absolute; 
+  width: 73%; 
+  bottom: 10px;
+  right: 80px;
+">
+
+
+
+But **this is still local and stuck on my computer/ Rstudio Cloud**.
+
+---
+name: clouds
+class: center, middle
+background-image: url(img/Clouds.jpg)
+background-size: cover
+
+class: center, middle
+
+# How do we start .emphasis[sharing]?
+
+
+# We are going to publish this on the web !
+
+
+---
+
+# Commit your files on github
+
+1. Go to the `Environment Panel`and got to `Git` tab.
+
+2. Select each element that appears to be changed.
+  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
+
+3. Click on Commit 
+
+4. Click on `Push`
 
 
 
