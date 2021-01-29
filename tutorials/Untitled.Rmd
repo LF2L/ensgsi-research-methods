@@ -1,0 +1,62 @@
+---
+title: "<code style='font-size: 200%'>countdown</code>"
+subtitle: "&#x23F2; :: &#x1F4AD; &#x1F4AC; &#x1F469;&#x200D;&#x1F4BB; :: &#x23F0;"
+author: "<a href='https://github.com/gadenbuie/countdown' style='color: #d33682;'>github.com/gadenbuie/countdown</a>"
+date: '<span style="color: #b58900;">`r packageVersion("countdown")`</span><br/><span style="color: #2aa198">`r Sys.Date()`</span>'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      titleSlideClass: ["middle", "left"]
+      highlightStyle: solarized-dark
+      highlightLines: true
+      slideNumberFormat: "%current%"
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+
+class: center middle
+
+[xaringan]: https://github.com/yihui/xaringan#readme
+[rmarkdown]: https://rmarkdown.rstudio.com
+[countdown]: https://github.com/gadenbuie/countdown
+
+# Hey look, it's a timer!
+
+<p style="margin: 11em 0;"></p>
+
+```{r first-timer, echo=FALSE}
+library(countdown)
+solarized <- xaringanthemer:::solarized
+countdown(
+  minutes = 0, seconds = 42,
+  top = "26%", right = "33%",
+  play_sound = TRUE,
+  color_border              = solarized$magenta,
+  color_text                = solarized$magenta,
+  color_running_background  = solarized$cyan,
+  color_running_text        = solarized$base02,
+  color_finished_background = solarized$red,
+  color_finished_text       = solarized$base3
+)
+```
+
+
+### How to use your new countdown timer
+
+Click on the timer to **start** it.
+
+Click while running to **bump** it up.
+
+Click when complete to **restart** it.
+
+.small.subtle[&#x1F4F5; Timers don't work on mobile &#x1F625;]
+
+---
+# Easily add a timer to your slides!

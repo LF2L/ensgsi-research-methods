@@ -9,13 +9,3 @@ ggplot-the-second-trick
 presentation-4
 setup-2-for-warriors
 installing-git-in-your-machine
-setup-2-for-warriors-1
-install-r
-introduction-to-r
-on-git
-on-r
-on-r-markdown
-on-ggplo
-on-dplry-package
-using-distill
-using-rticles

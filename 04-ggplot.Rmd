@@ -4,6 +4,6 @@
 
 
 ```{r , echo=FALSE, include=TRUE}
-embed_xaringan(url = "https://slides.yihui.org/xaringan", ratio = "16:9")
+embed_xaringan(url = " ", ratio = "16:9")
 ```
 

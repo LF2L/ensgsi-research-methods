@@ -6,8 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    self_contained: true
-    lib_dir: "../../libs"
+#    self_contained: true
+#    lib_dir: "../../libs"
+    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -23,6 +24,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
 require(xaringanExtra)
+require(xaringanthemer)
+require(countdown)
 xaringanExtra::use_share_again()
 
 ```
@@ -222,7 +225,7 @@ If you have no idea what I’m talking about, think of it as **DropBox** but muc
 
 - **It takes care of the server aspects of git**.
 - **Graphical user interface for git**.
-  - Explore the contente and its hystory.
+  - Explore the contente and its history.
   - Tracking issues
 - **Facilitates**:
   - Learning from others
@@ -262,18 +265,31 @@ The main goal is to use
 
 ---
 
-# Setup 1 (Reccomended)
+# Github account 
 
-## Github account
+1. Create an account using your UL email at the Github plateform (It’s free!): https://github.com
+  - Eventuelly you can demand for the [advantages as Student of UL](https://education.github.com/)  
+2.  Chose your **Username**. You might want to give that some thought.
+Some Recommendations<sup>1</sup> :
 
-1. Go to the github plateform: https://github.com/ 
-
-2. Create an account using your UL email.
-
-3. Recommendations:
-  - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your cv. 
+  - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your CV. 
   - Put your photo, a description of who you are.
-  - Use a profesiona nickname.
+  - Use a professional username (see the recommendations).
+
+
+
+```{r, include=TRUE, echo=FALSE}
+countdown(minutes = 8, seconds = 0, bottom = 0)
+```
+
+.footnote[
+ [1: See some recommendations about choising the Username ](https://happygitwithr.com/github-acct.html)
+]
+---
+
+```{r}
+countdown(minutes = 0, seconds = 42)
+```
 
 ---
 
@@ -302,8 +318,6 @@ Checkout this video if it is not clear!
 <iframe width=80% height="450" src="https://www.youtube.com/embed/iv8rSLsi1xo" frameborder="0" margin="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
-
----
 
 
 
