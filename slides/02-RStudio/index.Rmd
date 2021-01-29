@@ -43,44 +43,45 @@ At the end of this
 
 Two elements
 
-## 1. Understanding the Console in R
+### 1. Understanding the Rstudio 
 
-## 2. Data Visualization: an Intro
+### 2. Data Visualization: an Intro
 
 
 ---
 
-# What is R?
+# What is R project? <img src="https://www.r-project.org/Rlogo.png" alt="logo Rstudio" style="width:150px;" align="right">
 
-The R Project for Statistical Computing
+R is a programming language and free software environment for statistical computing and graphics.
 
-.pull-left[
+.left-column[
 - R’s mission is to enable the best and most thorough exploration of data possible . 
-- It is a dialect of the S language, developed at Bell Laboratories
+- It change the way people analyze, visualize, and manipulate data
 
-- ACM noted that S “will forever alter the way people analyze, visualize, and manipulate data”
-]
-.pull-right[
-```{r, include=TRUE, fig.align='center', out.width='200px', cache=TRUE,}
-knitr::include_graphics("https://www.r-project.org/Rlogo.png")
-```
 https://www.r-project.org/
+]
 
+.right-column[
+```{r, include=TRUE, fig.align='center', out.width='80%', cache=TRUE,}
+knitr::include_graphics("img/R-project-00.jpg")
+```
+
+Useful, but the interface is a little bit scary!..
 ]
 
 ---
 
-# What is RStudio
+# What is RStudio   <img src="https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png" alt="logo Rstudio" style="width:150px;" align="right">
 
-.pull-left[
-RStudio is an integrated development environment (IDE) that provides an interface by adding many convenient features and tools.
-]
-.pull-right[
-```{r, include=TRUE, fig.align='center', out.width='300px', cache=TRUE}
-knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/57299a1dcd979c623325f11bf5e5ce60f3d4eb00/e4602/wp-content/uploads/2018/10/black.png")
+
+
+
+```{r, include=TRUE, fig.align='center', out.width='70%', cache=TRUE}
+knitr::include_graphics("img/RStudio-00.jpg")
 ```
-]
 
+
+RStudio is an integrated development environment (IDE) that provides an interface by adding many convenient features and tools.
 ---
 
 # R vs RStudio
@@ -92,6 +93,17 @@ knitr::include_graphics("https://moderndive.netlify.app/images/shutterstock/R_vs
 ---
 
 
+class:  middle center 
+
+.assignment.infobox[
+.Large[Hands on the workshop!.]
+
+The main goal is to create an Rstudio account, and to connect it with Github 
+]
+
+
+
+---
 # Using Rstudio Cloud account (Recommended)
 
 .left-column[ 
