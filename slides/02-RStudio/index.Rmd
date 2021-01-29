@@ -102,41 +102,41 @@ The main goal is to create an Rstudio account, and to connect it with Github
 ]
 
 
-
 ---
+
 # Using Rstudio Cloud account (Recommended)
 
 .left-column[ 
-1. Sign up for Rstudio Cloud Free version: https://rstudio.cloud/
+1. Sign up for free version: https://rstudio.cloud/
 
 2. Use you github account!
 
 3. Voila!, C'est bon
 
+**Timming**: 5 min
 ]
 
 .right-column[ 
 
-Image
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("img/RStudio-cloud-00.jpg")
+```
 
 ]
 
 
-
----
-
-
-## Rstudio Cloud account
-
-
-.infobox.important[
+.infobox.important.pull-down[
 **RStudio Cloud is a webpage**, so no installation is required. 
 
 However, as you have notice, there is some restrictions in the quantity of project and the virtual machine assigned to you.  It's the best option to get start!]
 
 ---
 
+# Connecting  Github repo with Rstudio
 
+
+
+---
 # Understanding Rstudio Interface
 
 .left-column[
@@ -149,6 +149,9 @@ However, as you have notice, there is some restrictions in the quantity of proje
 # First is first: Console
 
 
+
+
+
 ---
 class: middle
 
@@ -156,7 +159,7 @@ class: middle
 
 ---
 
-# Primers with Rstudio 
+# Tutorial on Rstudio 
 
 .infobox.assignment[ **Objective**
 

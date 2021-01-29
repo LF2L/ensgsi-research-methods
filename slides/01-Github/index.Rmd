@@ -20,7 +20,7 @@ output:
 
 
 
-```{r , echo=FALSE}
+```{r , echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
 require(xaringanExtra)
