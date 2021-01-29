@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-#    self_contained: true
-#    lib_dir: "../../libs"
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -17,8 +17,6 @@ output:
       countIncrementalSlides: false
       beforeInit: "https://www.fabbiocrux.com/xaringan/macros.js"
 ---
-
-
 
 
 ```{r , echo=FALSE, include=FALSE}
@@ -30,22 +28,20 @@ xaringanExtra::use_share_again()
 
 ```
 
-# I'm assuming...
+# We are assuming...
 
-You have working versions of:
-
+You have know how works:
 - Github
 - RStudio
 
+And you are eager to see the magic happen.
 
-So let's start
+So let's start...
 
 ---
 
 
 # Learning outcomes
-
-At the end of this
 
 - You will produce your first reproducible document and put it online 
 - You will have a basic understanding of the main functions of Rmarkdown
@@ -54,16 +50,21 @@ At the end of this
 
 # Agenda of this sprint
 
-Two elements
 
-## 1. Understanding the Rmarkdown
+### 1. Understanding the Rmarkdown
 
-## 2. Connecting with github to publish your work!
-
+### 2. Connecting with github to publish your work!
 
 
 ---
 
+class: center
+
+# What is Rmarkdown?
+
+```{r, include=TRUE, out.width='40%', fig.align='center'}
+knitr::include_graphics("https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png")
+```
 
 ---
 background-image: url(img/screenshots/Single-rmd.png)

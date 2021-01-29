@@ -5,7 +5,10 @@ magic-of-r-rstudio
 presentation-2
 rmarkdown-the-first-trick
 presentation-3
+arche
 ggplot-the-second-trick
 presentation-4
+data-wrangling
+presentation-5
 setup-2-for-warriors
 installing-git-in-your-machine

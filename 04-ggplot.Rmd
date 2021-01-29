@@ -7,3 +7,11 @@
 embed_xaringan(url = " ", ratio = "16:9")
 ```
 
+At the end of this sprint, We hope that: 
+
+1. You know the magic of `ggplot2` to make beautiful plots.
+2. 
+3. 
+
+
+
