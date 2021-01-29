@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-#    self_contained: true
-#    lib_dir: "../../libs"
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -269,27 +269,21 @@ The main goal is to use
 
 1. Create an account using your UL email at the Github plateform (It’s free!): https://github.com
   - Eventuelly you can demand for the [advantages as Student of UL](https://education.github.com/)  
-2.  Chose your **Username**. You might want to give that some thought.
-Some Recommendations<sup>1</sup> :
+
+2.  Choose your **Username**. You might want to give some thought about it<sup>1</sup>.
 
   - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your CV. 
   - Put your photo, a description of who you are.
   - Use a professional username (see the recommendations).
 
+**[Timming](https://apps.garrickadenbuie.com/countdown/): 8 Min**
 
 
-```{r, include=TRUE, echo=FALSE}
-countdown(minutes = 8, seconds = 0, bottom = 0)
-```
 
 .footnote[
  [1: See some recommendations about choising the Username ](https://happygitwithr.com/github-acct.html)
 ]
----
 
-```{r}
-countdown(minutes = 0, seconds = 42)
-```
 
 ---
 
@@ -297,14 +291,11 @@ countdown(minutes = 0, seconds = 42)
 
 Once you have an account:
 
-- Create a new repository (call it  like - ‘`Example`’ or something similar), making sure it is public and you check the box that says ‘initialise new repository with a README’ 
-
-— Click ‘create repository’ at the bottom
+- You have `fork` the [Repository of the course](https://github.com/fabbiocrux/RR-workshop) using your Github account.
 
 ```{r echo=FALSE, out.width = "90%", fig.align='center', cache=TRUE}
 knitr::include_graphics('img/Github-00.jpg')
 ```
-
 
 
 
@@ -317,9 +308,6 @@ Checkout this video if it is not clear!
 .center[
 <iframe width=80% height="450" src="https://www.youtube.com/embed/iv8rSLsi1xo" frameborder="0" margin="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
-
-
-
 
 
 ---
