@@ -26,45 +26,74 @@ require(fontawesome)
 require(xaringanExtra)
 xaringanExtra::use_share_again()
 
+require(countdown)
 ```
 
-# We are assuming...
+# We are assuming that...
 
-You have know how works:
+You know how it works:
+
 - Github
 - RStudio
 
-And you are eager to see the magic happen.
-
 So let's start...
 
----
 
+---
 
 # Learning outcomes
 
-- You will produce your first reproducible document and put it online 
-- You will have a basic understanding of the main functions of Rmarkdown
+The rmarkdown package is a single package, but "R Markdown" is the backbone for an ecosystem of packages for creating computational documents in R. 
+
+
+- You will produce your first reproducible document and put it online. 
+- You will have a basic understanding of the main component and functions of Rmarkdown.
+
 
 ---
+
+class: middle
 
 # Agenda of this sprint
 
 
-### 1. Understanding the Rmarkdown
+.Large[1) Understanding the Rmarkdown]
 
-### 2. Connecting with github to publish your work!
+.Large[2) Connecting with github to publish your work!]
 
 
 ---
+background-image: url(https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png)
+background-position: 95% 50%
+background-size: 35%
 
-class: center
+
+class: left
 
 # What is Rmarkdown?
 
-```{r, include=TRUE, out.width='40%', fig.align='center'}
-knitr::include_graphics("https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png")
-```
+1. ["An authoring framework for data science."](https://rmarkdown.rstudio.com/lesson-1.html) (`r emo::ji("heavy_check_mark")`)
+
+1. [A document format (`.Rmd`).](https://bookdown.org/yihui/rmarkdown/) (`r emo::ji("heavy_check_mark")`)
+
+1. [An R package named `rmarkdown`.](https://rmarkdown.rstudio.com/docs/) (`r emo::ji("heavy_check_mark")`)
+
+1. ["A file format for making dynamic documents with R."](https://rmarkdown.rstudio.com/articles_intro.html) (`r emo::ji("heavy_check_mark")`)
+
+1. ["A tool for integrating text, code, and results."](https://r4ds.had.co.nz/communicate-intro.html) (`r emo::ji("heavy_check_mark")`)
+
+1. ["A computational document."](http://radar.oreilly.com/2011/07/wolframs-computational-documen.html) (`r emo::ji("heavy_check_mark")`)
+
+1. Wizardry. (`r emo::ji("wizard")`)
+
+
+---
+class: center
+background-image: url('img//rmd_flowchart.png')
+background-size: contain
+background-color: #f6f6f6
+
+##  Flow of the R Markdown? `r emo::ji("dancing")`
 
 ---
 background-image: url(img/screenshots/Single-rmd.png)
@@ -126,12 +155,6 @@ So that's the metadata, but the real meat in your R Markdown file
 is text written in **markdown**...
 
 
-
----
-Markdown
-
-
-
 ---
 background-image: url(img/screenshots/Single-rmd5.png)
 background-position: 50% 5px
@@ -143,23 +166,126 @@ and your code, written in R. So these 3 things: (1) **Metadata**, (2) *Text*, an
 
 ---
 
+# Hands on the PC: Exploring outputs  `r icon::fa("clipboard-list",  pull = "right")`
+
+.infobox.assignment[
+
+Let's play with the **`YAML` metadata**:
+
+
+1. Open the `index.Rmd` file on Rstudio.
+2. In title, select the corresponding course.
+3. In `author`: Put your **Name**.
+]
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/YAML-00.jpg")
+```
+
+
+```{r, include=TRUE}
+countdown(minutes = 1, seconds = 0,right = 0)
+```
+
+
+---
 class: top center
 
-<video width="1530" height="610" controls>
-<source src="img/single-doc-knit.mp4" type="video/mp4"> 
-</video>
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/YAML-01.jpg")
+```
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100px'}
+knitr::include_graphics("https://www.libraries.rutgers.edu/sites/default/files/styles/resize_to_300px_width/public/events/2019/09/knitr_0.png?itok=ubV35F1I")
+```
 
 
 The real magic happens, when you click on the `**Knit icon**`, and see your file turned into HTML. 
 
 ---
 
+class: middle left
+
+# Let's create a PDF document
+
+
+```
+output:
+  html_document: default
+  pdf_document: default
+```  
+
+
+```{r, include=TRUE}
+countdown(minutes = 1, seconds = 0,right = 0)
+```
+
+
+---
+
+class: middle left
+
+# Now a Word document
+
+```
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+```  
+
+
+```{r, include=TRUE}
+countdown(minutes = 1, seconds = 0,right = 0)
+```
+
+
+---
+
+class: middle left
+
+# Now a Presentation document
+
+Add the `ioslides_presentation` and add the `#` symbol to the others outputs:
+
+```
+output: ioslides_presentation
+#  word_document: default
+#  html_document: default
+#  pdf_document: default
+```  
+
+
+```{r, include=TRUE}
+countdown(minutes = 1, seconds = 0,right = 0)
+```
+
+---
+
+class: middle center
+
+# Ta da !!! 
+### Four types of documents from one source.
+
+
+
+
+---
+class: middle center
+
+# Let's create a first Website
+
+---
+
+# we'll use the `html_output` 
+
+
+---
 background-image: url(img/screenshots/Single-knit1.png)
 background-position: 50% 5px
 background-size: 70%
 class: middle, bottom
 
-Here is what we knit. 
 
 --
 
@@ -225,6 +351,10 @@ class: center, middle
 
 
 
+
+```{r, include=TRUE, echo=FALSE}
+countdown( minutes = 1, seconds = 30,right = 0)
+```
 
 
 
