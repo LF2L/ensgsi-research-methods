@@ -30,7 +30,6 @@ link-citations: yes
 
 github-repo: "LF2L/ensgsi-research-methods"
 url: 'https://LF2L.github.io/ensgsi-research-methods/'
-
 ---
 
 
@@ -55,7 +54,6 @@ require(countdown)
 We care for open science and open practices.
 Thus, this website is hosted on GitHub, a open source plateform, where you will find the source documents and holds all the practical instructions and data. 
 
-devtools::session_info()
 
 
 ## Acknowledgements and Inspirations {-}

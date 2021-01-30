@@ -1,4 +1,10 @@
 base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
 tidyverse
 ggplot2
 tibble
@@ -11,3 +17,4 @@ forcats
 xaringan
 xaringanExtra
 fontawesome
+countdown

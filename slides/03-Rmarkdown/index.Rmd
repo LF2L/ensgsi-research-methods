@@ -208,6 +208,12 @@ class: middle left
 
 # Let's create a PDF document
 
+Go to `Console` and write 
+
+```
+rmarkdown::render("index.Rmd", output_format = "pdf_document")
+```
+**or**
 
 ```
 output:
@@ -226,6 +232,14 @@ countdown(minutes = 1, seconds = 0,right = 0)
 class: middle left
 
 # Now a Word document
+
+Go to `Console` and write 
+
+```
+rmarkdown::render("index.Rmd", output_format = "word_document")
+```
+
+**or**
 
 ```
 output:
@@ -269,18 +283,23 @@ class: middle center
 
 
 
-
 ---
-class: middle center
+name: clouds
+class: center, middle
+background-image: url(img/Clouds.jpg)
+background-size: cover
+
+class: center, middle
+
+# How do we start .emphasis[sharing]?
 
 # Let's create a first Website
 
----
-
-# we'll use the `html_output` 
+We are going to publish this on the web !
 
 
 ---
+
 background-image: url(img/screenshots/Single-knit1.png)
 background-position: 50% 5px
 background-size: 70%
@@ -318,39 +337,19 @@ Using the **`THEME:`** key in our YAML, we changed our font and colors.
   right: 80px;
 ">
 
-
-
-But **this is still local and stuck on my computer/ Rstudio Cloud**.
-
----
-name: clouds
-class: center, middle
-background-image: url(img/Clouds.jpg)
-background-size: cover
-
-class: center, middle
-
-# How do we start .emphasis[sharing]?
-
-
-# We are going to publish this on the web !
-
-
 ---
 
-# Commit your files on github
+# Improving  the `html_output`
 
-1. Go to the `Environment Panel`and got to `Git` tab.
-
-2. Select each element that appears to be changed.
-  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
-
-3. Click on Commit 
-
-4. Click on `Push`
-
-
-
+```
+output:
+  html_document:
+    theme: flatly       # Adding a beauty colors
+    toc: true           # Table of content
+    toc_float: true     # Movable TOC
+    toc_depth: 2        # Two levels in the TOC
+    number_sections: true   # Using numbered sections
+```
 
 ```{r, include=TRUE, echo=FALSE}
 countdown( minutes = 1, seconds = 30,right = 0)
@@ -358,3 +357,112 @@ countdown( minutes = 1, seconds = 30,right = 0)
 
 
 
+---
+
+class: middle center
+
+# But **this is still local and stuck on my computer/ Rstudio Cloud**.
+
+
+---
+
+# Commit your files on github
+
+1. In `console`,  write `file.create(".nojekyll")`
+
+1. In the `Environment Panel`,  go to `Git` tab.
+
+2. Select each element that appears to be changed.
+  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
+
+3. Add a `Commit message`
+
+3. Click on `Commit` 
+
+4. Click on `Push`
+
+
+```{r, include=TRUE, echo=FALSE}
+countdown( minutes = 1, seconds = 30,right = 0)
+```
+
+
+---
+
+
+class: center, middle
+
+## Start with GitHub Pages `r emo::ji("rocket")`
+
+---
+class: middle, center
+
+.pull-left[
+## Repo
+
+`https://github.com/lf2l/ensgsi-research-methods`
+
+]
+
+.pull-right[
+## Link
+
+`https://lf2l.github.io/ensgsi-research-methods`
+
+]
+
+---
+class: middle, center
+
+.pull-left[
+## Repo
+
+`https://github.com/<user>/<repo>`
+
+]
+
+.pull-right[
+## Link
+
+`https://<user>.github.io/<repo>`
+
+]
+
+---
+background-image: url(img/index.jpg)
+background-size: contain
+background-size: 50%
+background-color: #ffffff
+
+---
+
+class: middle, center
+
+.left-column[
+## Index file link
+
+
+## Other file link
+
+]
+
+.right-column[
+
+<br>
+`https://<user>.github.io/<repo>`
+<br><br><br>
+`https://github.com/<user>/<repo>/<.html>`
+
+]
+
+
+---
+
+
+#  On Github
+
+1. Go to `Settings > GitHub Pages > Source` 
+
+2. Change `None` to `Main`
+
+3. Voila, you have your first Website `r emo::ji("smile")`
