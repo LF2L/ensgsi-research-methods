@@ -2,3 +2,6 @@ base
 xaringanExtra
 countdown
 xaringanthemer
+fontawesome
+gapminder
+dplyr

@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Version control"
 subtitle: "With Git and Github ⚔<br/>"
-author: "Fabio CRUZ"
+author: "Fabio CRUZ & Giovanny ARBELAEZ"
 institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
@@ -27,7 +27,7 @@ require(xaringanExtra)
 require(xaringanthemer)
 require(countdown)
 xaringanExtra::use_share_again()
-
+require(countdown)
 ```
 
 
@@ -35,8 +35,8 @@ xaringanExtra::use_share_again()
 
 By the end of this practical you should be able to:
 
-- Explain the use of and differences between Git and GitHub
-- Create reproducible and open file
+- Explain the use of and differences between Git and GitHub.
+- Create an repository open source where you will work the workshop.
 
 
 ---
@@ -119,14 +119,14 @@ knitr::include_graphics("img/Repo-00.jpg")
 ## Example of Repository History
 
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
-knitr::include_graphics("img/Repo-00.jpg")
+knitr::include_graphics("img/Repo-01.jpg")
 ```
 
 ---
 
 ## Example of commits
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
-knitr::include_graphics("img/Repo-00.jpg")
+knitr::include_graphics("img/Repo-02.jpg")
 ```
 ---
 
@@ -154,10 +154,11 @@ If you have no idea what I’m talking about, think of it as the **“Track Chan
 
 
 ---
+
 # Why use Git
 
 - It's fast.
-- You don't need acces to a server.
+- You don't need access to a server.
 - Amazingly good at merging simultaneous changes.
 - Open science is using it.
 
@@ -172,29 +173,18 @@ class: middle
 Git normaly use command line tools (aka `Terminal` commands).
 For the purpose of this workshop, we are not going to use this tools directly.
 
-However, we suggest that people interested get to know a 
+However, we suggest that people interested get to know on the subject
 
 Take a look at: 
 - [Git's Official documentation](https://git-scm.com/docs)
 - [Happy git with R](https://happygitwithr.com/git-intro.html)
 ] 
 
----
-
-## Attention
-
-For example
-When you have a repository, and you change some files:
-
-- See what you’ve changed with `git add`
-- 
-    
-
-
 
 ---
 
 # What is Github?
+--
 
 .pull-left[
 
@@ -221,7 +211,7 @@ If you have no idea what I’m talking about, think of it as **DropBox** but muc
 
 ---
 
-# Why is Github?
+# Why Github?
 
 - **It takes care of the server aspects of git**.
 - **Graphical user interface for git**.
@@ -236,7 +226,7 @@ If you have no idea what I’m talking about, think of it as **DropBox** but muc
 
 ---
 
-# Is it going to hurt use Github?
+# Is Github going to hurt me ?
 
 Yes, 
 
@@ -256,27 +246,22 @@ We'll start baby steps by putting a single project under version control.
 
 ---
 
-class:  middle center
+# Hands on the Workshop
 
 .assignment.infobox[
-.Large[Hands on the workshop!.]
-The main goal is to use
-]
-
----
-
-# Github account 
-
 1. Create an account using your UL email at the Github plateform (It’s free!): https://github.com
   - Eventuelly you can demand for the [advantages as Student of UL](https://education.github.com/)  
 
-2.  Choose your **Username**. You might want to give some thought about it<sup>1</sup>.
+1.  Choose your **Username**. You might want to give some thought about it<sup>1</sup>.
 
   - This site will present the projects that eventually you will work. Make it professional!. You will able to valorise in your CV. 
   - Put your photo, a description of who you are.
   - Use a professional username (see the recommendations).
+]
 
-**[Timming](https://apps.garrickadenbuie.com/countdown/): 8 Min**
+```{r, include=TRUE}
+countdown(minutes = 10, seconds = 0,right = 0)
+```
 
 
 
@@ -287,19 +272,60 @@ The main goal is to use
 
 ---
 
-## Github account
-
-Once you have an account:
+## Fork Repository of the workshop
 
 - You have `fork` the [Repository of the course](https://github.com/fabbiocrux/RR-workshop) using your Github account.
 
-```{r echo=FALSE, out.width = "90%", fig.align='center', cache=TRUE}
-knitr::include_graphics('img/Github-00.jpg')
+```{r include=TRUE,  out.width = "60%", fig.align='center', cache=TRUE}
+knitr::include_graphics('img/Fork-00.png')
 ```
 
 
+```{r, include=TRUE}
+countdown(minutes = 2, seconds = 0,right = 0)
+```
 
 ---
+
+class: middle
+
+# Thre main concepts on Github
+
+1. Make a `Commit`.
+
+2. Add a `Comment changes`
+
+3. `Push` your change to the repository
+
+---
+
+# Change `README.md`
+
+[Learn `Markdown` language in 10 min.](https://commonmark.org/help/tutorial/) 
+
+```{r include=TRUE,  out.width = "60%", fig.align='center', cache=TRUE}
+knitr::include_graphics('img/Markdown.png')
+```
+
+1. Add the information on `README.md`.
+2. Make a `commit`
+
+
+```{r, include=TRUE}
+countdown(minutes = 10, seconds = 0,right = 0)
+```
+
+---
+
+
+# Useful material to look
+
+- [Happy git and Github for the useR](https://happygitwithr.com/big-picture.html)
+- [Material from Karl Broman](https://kbroman.org/github_tutorial/pages/why.html)
+
+
+---
+
 
 ## Github account
 
@@ -308,14 +334,6 @@ Checkout this video if it is not clear!
 .center[
 <iframe width=80% height="450" src="https://www.youtube.com/embed/iv8rSLsi1xo" frameborder="0" margin="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
-
-
----
-
-# Useful material to look
-
-- [Happy git and Github for the useR](https://happygitwithr.com/big-picture.html)
-- [Material from Karl Broman](https://kbroman.org/github_tutorial/pages/why.html)
 
 
 
