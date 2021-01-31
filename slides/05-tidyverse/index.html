@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Data Wrangling</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Fabio CRUZ" />
+    <script src="libs/header-attrs-2.6.6/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon-1.4.1/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain-0.2.4/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain-0.2.4/shareagain.js"></script>
+    <link href="libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="libs/countdown-0.3.5/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown-0.3.5/countdown.js"></script>
+    <link rel="stylesheet" href="../../assets/ENSGSI-theme.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.fabbiocrux.com/xaringan/Fabio.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.fabbiocrux.com/xaringan/Fabio-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Wrangling
+## Tidyverse approach
+### Fabio CRUZ
+### Université de Lorraine
+### 2021/02/01 (updated: 2021-01-31)
+
+---
+
+
+
+
+
+# We are assuming that...
+
+You know how it works:
+
+- Github
+- RStudio
+- and you start to understand R &amp; Rmarkdown approach
+- You know some basics of `ggplot` package
+
+So let's start...
+
+
+---
+
+class: middle
+
+# Agenda of this sprint
+
+
+1. Explore the **`tidyverse` package**
+
+
+---
+
+
+# Learning outcomes
+
+Data wrangling is a major component in data anlaysis
+
+- You will know the Five Major Versb used to manipulate your data 
+- You will have a basic understanding of the importante of `tidy`data.
+
+
+---
+background-image: url('img/01-Introduction.001.jpeg')
+background-position: 95% 50%
+background-size: cover
+
+--
+background-image: url('img/01-Introduction.002.jpeg')
+
+--
+background-image: url('img/01-Introduction.003.jpeg')
+
+--
+background-image: url('img/01-Introduction.004.jpeg')
+
+--
+background-image: url('img/01-Introduction.005.jpeg')
+
+--
+background-image: url('img/01-Introduction.006.jpeg')
+
+--
+background-image: url('img/01-Introduction.007.jpeg')
+
+---
+
+The `tidyverse` is a collection of R packages that share common philosophies and are designed to work together. &lt;br&gt;&lt;br&gt; 
+  
+&lt;a href="http://tidyverse.tidyverse.org/logo.png"&gt;&lt;img src="img/tidyverse.png" style="width: 200px;"/&gt;&lt;/a&gt;
+
+
+---
+
+
+# Hands on the PC: Hi  tidyverse!    <i class="fas  fa-clipboard-list fa-pull-right "></i>
+
+
+.infobox.assignment[
+
+Let's play with the **`tidyverse`**:
+
+
+1. Open the `Tutorials &gt; 02-transform-data &gt; 01-tibbles &gt; 01-tibbles-fr.Rmd` file on Rstudio cloud.
+
+1. Install the package `prenoms` using `devtools::install_github( "ThinkR-open/prenoms")` in the console panel.
+2. `Run document` and make the step-by-step tutorial
+3. Answer the questions, in the  `index.Rmd` document as long as you find the answers.
+]
+---
+
+&lt;img src="img/tibble-00.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+<div class="countdown" id="timer_6016fbd6" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+
+
+
+
+
+---
+class: middle center
+
+
+# Summarizing main insigths on `tidyverse` 
+
+
+---
+
+# First motivating example for today
+
+&lt;a href="http://gitsense.github.io/images/wealth.gif"&gt;&lt;img src="img/wealth.gif" style="width: 700px;"/&gt;&lt;/a&gt;
+
+- Inspired by the late, great [Hans Rosling](https://www.youtube.com/watch?v=jbkSRLYSojo)
+
+
+---
+
+layout: false
+class: center, middle
+name: wrangling
+
+# Data Wrangling
+
+&lt;img src="img/dplyr_hex.png" width="30%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle
+
+
+## The [`gapminder` package](https://github.com/jennybc/gapminder)
+
+
+```r
+library(gapminder)
+gapminder
+```
+
+```
+## # A tibble: 1,704 x 6
+##    country     continent  year lifeExp      pop gdpPercap
+##    &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+##  1 Afghanistan Asia       1952    28.8  8425333      779.
+##  2 Afghanistan Asia       1957    30.3  9240934      821.
+##  3 Afghanistan Asia       1962    32.0 10267083      853.
+##  4 Afghanistan Asia       1967    34.0 11537966      836.
+##  5 Afghanistan Asia       1972    36.1 13079460      740.
+##  6 Afghanistan Asia       1977    38.4 14880372      786.
+##  7 Afghanistan Asia       1982    39.9 12881816      978.
+##  8 Afghanistan Asia       1987    40.8 13867957      852.
+##  9 Afghanistan Asia       1992    41.7 16317921      649.
+## 10 Afghanistan Asia       1997    41.8 22227415      635.
+## # … with 1,694 more rows
+```
+
+
+---
+
+# Base R versus the `tidyverse`
+
+- The mean life expectancy across all years for Asia
+--
+
+
+```r
+# Base R
+asia &lt;- gapminder[gapminder$continent == "Asia", ]
+mean(asia$lifeExp)
+```
+
+```
+## [1] 60.0649
+```
+--
+ 
+
+
+
+```r
+library(dplyr)
+gapminder %&gt;% filter(continent == "Asia") %&gt;%
+  summarize(mean_exp = as.numeric(format(mean(lifeExp), digits = 5))) %&gt;% 
+  pull()
+```
+
+```
+## [1] 60.065
+```
+
+
+---
+
+## The pipe `%&gt;%`
+
+&lt;img src="figure/pipe.png" style="width: 240px;"/&gt; &amp;emsp; &amp;emsp; &amp;emsp; &lt;img src="figure/MagrittePipe.jpg" style="width: 300px;"/&gt;
+--
+
+- A way to chain together commands
+- Can be read as "and then" when reading over code
+--
+
+
+
+---
+
+name: fivemv
+
+# [The Five Main Verbs (5MV)](http://moderndive.com/5-wrangling.html) of data wrangling
+
+- [`filter()`](#filter) 
+- [`summarize()`](#summarize)
+- [`group_by()`](#groupby)
+- [`mutate()`](#mutate) 
+- [`arrange()`](#arrange)
+
+---
+
+name: filter
+
+## `filter()`
+
+- Select a subset of the rows of a data frame. 
+
+- Arguments are "filters" that you'd like to apply.
+--
+
+
+```r
+library(gapminder); library(dplyr)
+gap_2007 &lt;- gapminder %&gt;% filter(year == 2007)
+head(gap_2007, 4)
+```
+
+```
+## # A tibble: 4 x 6
+##   country     continent  year lifeExp      pop gdpPercap
+##   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+## 1 Afghanistan Asia       2007    43.8 31889923      975.
+## 2 Albania     Europe     2007    76.4  3600523     5937.
+## 3 Algeria     Africa     2007    72.3 33333216     6223.
+## 4 Angola      Africa     2007    42.7 12420476     4797.
+```
+
+- Use `==` to compare a variable to a value
+
+---
+
+## Logical operators
+
+- Use `|` to check for any in multiple filters being true:
+--
+
+
+--
+
+
+
+---
+
+## Logical operators
+
+- Use `,` to check for all of multiple filters being true:
+--
+
+
+
+
+
+---
+
+## Logical operators
+
+- Use `%in%` to check for any being true &lt;br&gt; (shortcut to using `|` repeatedly with `==`)
+--
+
+
+--
+
+
+
+
+---
+
+name: summarize
+
+## `summarize()`
+
+- Any numerical summary that you want to apply to a column of a data frame is specified within `summarize()`.
+
+
+--
+
+
+
+---
+
+name: groupby
+
+### Combining `summarize()` with `group_by()`
+
+When you'd like to determine a numerical summary for all
+levels of a different categorical variable
+
+
+
+--
+
+
+---
+
+name: mutate
+
+## `mutate()`
+
+- Allows you to 
+    1. &lt;font color="yellow"&gt;create a new variable with a specific value&lt;/font&gt; OR
+    2. create a new variable based on other variables OR
+    3. change the contents of an existing variable
+
+--
+
+
+
+---
+
+## `mutate()`
+
+- Allows you to 
+    1. create a new variable with a specific value OR
+    2. &lt;font color="yellow"&gt;create a new variable based on other variables&lt;/font&gt; OR
+    3. change the contents of an existing variable
+
+--
+
+
+
+
+
+
+---
+
+## `mutate()`
+
+- Allows you to 
+    1. create a new variable with a specific value OR
+    2. create a new variable based on other variables OR
+    3. &lt;font color="yellow"&gt;change the contents of an existing variable&lt;/font&gt;
+
+--
+
+
+
+---
+
+name: arrange
+
+## `arrange()`
+
+- Reorders the rows in a data frame based on the values of one or more variables
+--
+
+
+
+---
+
+## `arrange()`
+
+- Can also put into descending order
+--
+
+
+
+---
+
+## Don't mix up `arrange` and `group_by`
+
+- `group_by` is used (mostly) with `summarize` to calculate summaries over groups
+
+- `arrange` is used for sorting
+
+---
+
+## Don't mix up `arrange` and `group_by`
+
+This doesn't really do anything useful
+
+
+
+---
+
+## Don't mix up `arrange` and `group_by`
+
+But this does
+
+
+
+
+---
+
+# Commit your files changes on Github
+
+1. In the `Environment Panel`,  go to `Git` tab.
+
+2. Select each element that appears to be changed.
+  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
+
+3. Add a `Commit message`
+
+3. Click on `Commit` 
+
+4. Click on `Push`
+
+
+<div class="countdown" id="timer_6016f9e7" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+</div>
+
+
+---
+
+class: center, middle
+
+## Coffe  ☕
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://www.fabbiocrux.com/xaringan/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

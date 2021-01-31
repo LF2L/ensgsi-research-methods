@@ -4,11 +4,16 @@
 
 
 ```{r , echo=FALSE, include=TRUE}
-embed_xaringan(url = " ", ratio = "16:9")
+embed_xaringan(url = "slides/05-tidyverse/index.html", ratio = "16:9")
 ```
+
+This is one of the most important sprints. This will give you the really basis of data analysis.
 
 At the end of this sprint, We hope that: 
 
 1. You know the Five Main Verbs (5MV) of data wrangling
-2. You will know the 'Ceci n'est pas une pipe'
-3. Tidy data
+2. You will know the Pipe operator ('Ceci n'est pas une pipe')
+3. Tidy data approach
+
+
+

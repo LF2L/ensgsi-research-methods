@@ -10,7 +10,5 @@ ggplot-the-second-trick
 presentation-4
 data-wrangling
 presentation-5
-final-exercise
-section
 setup-2-for-warriors
 installing-git-in-your-machine

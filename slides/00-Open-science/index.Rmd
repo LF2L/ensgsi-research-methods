@@ -1,13 +1,14 @@
 ---
 title: "Open Science for a better World"
-subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
-institute: "RStudio, PBC"
+subtitle: "An introduction to the main tools"
+author: "Fabio CRUZ"
+institute: "Université de Lorraine"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
     lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -31,22 +32,32 @@ xaringanExtra::use_share_again()
 ## Music Vs. Research
 
 .pull-left[
-![](images/Musica.jpeg)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("images/Musica.jpeg")
+```
+
 ]
 .pull-right[
-![](images/Paper.png)
-]
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
+knitr::include_graphics("images/Paper.png")
+```
 
+]
 
 ---
 
 ## Music Vs. Research
 
 .pull-left[
-![](images/excel-chaos.jpg)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("images/excel-chaos.jpg")
+```
+
 ]
 .pull-rigth[
-![](images/Paper.png)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
+knitr::include_graphics("images/Paper.png")
+```
 ]
 
 ---
@@ -61,19 +72,25 @@ xaringanExtra::use_share_again()
 
 # The document pipeline
 
-![](images/Article-pipeline-1.png)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
+knitr::include_graphics("images/Article-pipeline-1.png")
+```
+
 
 ---
 
 # The document pipeline
 
-![](images/Article-pipeline-2.png)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("images/Article-pipeline-2.png")
+```
+
 
 How to describe in detail this section for Research & Industry purposes
 
 ---
 
-## Reproducibility and Replicability
+# Reproducibility and Replicability
 
 **Reproducibility**: 
 
@@ -87,9 +104,7 @@ Refers to the ability of a researcher to duplicate the results of a prior study 
 Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. “What Does Research Reproducibility Mean?” Science Translational Medicine 8 (341): 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027.
 
 ]
----``
-
-## Reproducibility and Replicability
+--
 
 **Replicability:** 
 
@@ -108,11 +123,15 @@ This is the act of repeating an entire study, independently of the original inve
 - Distributed research
 
 
-<img height="450px" class="plain" src="images/Problem-1.png">
-<img height="450px" class="plain" src="images/Problem-3.png">
-<img height="450px" class="plain" src="images/Problem-2.png">
+<img height="270px" class="plain" src="images/Problem-1.png">
+<img height="270px" class="plain" src="images/Problem-3.png">
+<img height="270px" class="plain" src="images/Problem-2.png">
 
 ---
+background-image: url("https://images-na.ssl-images-amazon.com/images/I/41KSVC8Q2JL.jpg")
+background-position: 90% 50%
+background-size: 30%
+
 
 ## Reproducibility concepts
 
@@ -121,9 +140,7 @@ Two key elements:
 - **Literate programming for enabling reproducibilty**
 - Version control for enhancing transparency
 
-<img height="100%"  src="https://images-na.ssl-images-amazon.com/images/I/41KSVC8Q2JL.jpg">
-
-*...for significantly better documentation of programs, and that we can best achieve this by considering programs to be works of literature.*
+*...for significantly better documentation of programs, <br>and that we can best achieve <br>this by considering programs to be works of literature.*
 
 
 .footnote[
@@ -136,50 +153,55 @@ D. E. Knuth, Literate Programming, The Computer Journal, Volume 27, Issue 2, 198
 
 *Literate programming refers to the use of a computing environment for authoring documents that contain a mix of natural (eg. English) and computer (eg. R) languages (Schulte et al. 2012)*
 
-![](images/Word-excel.jpg)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("images/Word-excel.jpg")
+```
+
 
 
 .footnote[ Schulte, Eric, Dan Davison, Thomas Dye, and Carsten Dominik. 2012. “A Multi-Language Computing Environment for Literate Programming and Reproducible Research.” Journal of Statistical Software 46 (1): 1–24. https://doi.org/10.18637/jss.v046.i03.]
 
---- 
-
+---
 
 ## Literate programming for enabling reproducibilty
 
 *Literate programming refers to the use of a computing environment for authoring documents that contain a mix of natural (eg. English) and computer (eg. R) languages (Schulte et al. 2012)*
 
-![](images/rstudio.png)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='70%'}
+knitr::include_graphics("images/rstudio.png")
+```
 
-#### RStudio tool
+---
+## What is R/RStudio?
+
+- R is a statistical programming language
+- RStudio is a convenient interface for R (an integrated development environment, IDE)
+
 
 .footnote[ Schulte, Eric, Dan Davison, Thomas Dye, and Carsten Dominik. 2012. “A Multi-Language Computing Environment for Literate Programming and Reproducible Research.” Journal of Statistical Software 46 (1): 1–24. https://doi.org/10.18637/jss.v046.i03.]
 
 
 ---
 
-## What is R/RStudio?
-
-- R is a statistical programming language
-- RStudio is a convenient interface for R (an integrated development environment, IDE)
-
-![](images/rstudio.png)
-
-##### RStudio tool
-
-- At its simplest:<sup>➥</sup>
-    - R is like a car’s engine
-    - RStudio is like a car’s dashboard
-
-<small>Source: [Modern Dive](https://moderndive.com/)</small>
-
----
-
 ## Rmarkdown
 
-![](images/Rmarkdown.png)
-
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='70%'}
+knitr::include_graphics("images/Rmarkdown.png")
+```
 
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+---
+## Github
+
+1. Open source
+2. Control version
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='50%'}
+knitr::include_graphics("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")
+```
+
+
 
 ---
 
@@ -199,8 +221,9 @@ D. E. Knuth, Literate Programming, The Computer Journal, Volume 27, Issue 2, 198
 
 - Create a first reproducible article 
 
-
-![](images/Phd-comics.gif)
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
+knitr::include_graphics("images/Phd-comics.gif")
+```
 
 
 ---
