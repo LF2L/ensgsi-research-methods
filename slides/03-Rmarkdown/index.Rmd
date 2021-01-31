@@ -89,7 +89,7 @@ class: left
 
 ---
 class: center
-background-image: url('img//rmd_flowchart.png')
+background-image: url('img/rmd_flowchart.png')
 background-size: contain
 background-color: #f6f6f6
 
@@ -107,6 +107,7 @@ This one is for a lab for visualizing data from the Museum of Modern Art.<br>
 Let's quickly walk through some of the key parts of this file.
 
 ---
+
 background-image: url(img/screenshots/Single-rmd0.png)
 background-position: 50% 5px
 background-size: 70%
@@ -134,7 +135,9 @@ class: middle, bottom
 
 
 The last YAML section is all about **output**. Here the output is an **`html_document`**.
+
 ---
+
 background-image: url(img/screenshots/Single-rmd3.png)
 background-position: 50% 5px
 background-size: 70%
@@ -210,15 +213,13 @@ class: middle left
 
 Go to `Console` and write 
 
-```
+```r
 rmarkdown::render("index.Rmd", output_format = "pdf_document")
 ```
 **or**
 
-```
-output:
-  html_document: default
-  pdf_document: default
+```r
+output: pdf_document
 ```  
 
 
@@ -235,17 +236,14 @@ class: middle left
 
 Go to `Console` and write 
 
-```
+```r
 rmarkdown::render("index.Rmd", output_format = "word_document")
 ```
 
 **or**
 
-```
-output:
-  word_document: default
-  html_document: default
-  pdf_document: default
+```r
+output: word_document
 ```  
 
 
@@ -264,9 +262,6 @@ Add the `ioslides_presentation` and add the `#` symbol to the others outputs:
 
 ```
 output: ioslides_presentation
-#  word_document: default
-#  html_document: default
-#  pdf_document: default
 ```  
 
 
@@ -466,3 +461,10 @@ class: middle, center
 2. Change `None` to `Main`
 
 3. Voila, you have your first Website `r emo::ji("smile")`
+
+
+---
+
+# More resources on Rmarkdown
+
+- [Rmarkdown from Rstudio](https://rmarkdown.rstudio.com/lesson-1.html)
