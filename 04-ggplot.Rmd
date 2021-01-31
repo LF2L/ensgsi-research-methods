@@ -4,7 +4,7 @@
 
 
 ```{r , echo=FALSE, include=TRUE}
-embed_xaringan(url = " ", ratio = "16:9")
+embed_xaringan(url = "slides/04-Dataviz/index.html", ratio = "16:9")
 ```
 
 At the end of this sprint, We hope that: 

@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-#    self_contained: true
-#    lib_dir: "../../libs"
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -87,15 +87,10 @@ background-image: url('img/01-Introduction.007.jpeg')
 
 ---
 
-![](https://media.giphy.com/media/nb8FKHnLX6BiM/giphy.gif)
-
----
-
-# Hands on the PC: Hi  grammar of graphics!    `r icon::fa("clipboard-list",  pull = "right")`
+# Hands on the PC: Hi  tydiverse!    `r icon::fa("clipboard-list",  pull = "right")`
 
 
 .infobox.assignment[
-
 
 Let's play with the **`tidyverse`**:
 
@@ -109,7 +104,7 @@ Let's play with the **`tidyverse`**:
 ---
 
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
-#knitr::include_graphics("img/Dataviz-00.jpg")
+knitr::include_graphics("img/tibble-00.jpg")
 ```
 
 
@@ -122,7 +117,7 @@ countdown(minutes = 20, seconds = 0,right = 0)
 class: middle center
 
 
-# Summarizing the insigths on `ggplot2` 
+# Summarizing the insigths on `tidyver` 
 
 
 
@@ -130,8 +125,6 @@ class: middle center
 ---
 
 # Commit your files changes on Github
-
-
 
 1. In the `Environment Panel`,  go to `Git` tab.
 
@@ -151,7 +144,6 @@ countdown( minutes = 1, seconds = 30,right = 0)
 
 
 ---
-
 
 class: center, middle
 
