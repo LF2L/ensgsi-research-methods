@@ -133,16 +133,13 @@ countdown(minutes = 20, seconds = 0,right = 0)
 class: middle
 
 
-# Summarizing the insigths on `ggplot2` 
+# Summarizing the insigths on `ggplot2` the ARCHE docuoment
  
--
-
 
 
 ---
 
 # Commit your files changes on Github
-
 
 
 1. In the `Environment Panel`,  go to `Git` tab.
