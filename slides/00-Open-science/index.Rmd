@@ -17,9 +17,7 @@ output:
       countIncrementalSlides: false
 ---
 
-
-
-```{r , echo=FALSE}
+```{r , echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
 require(xaringanExtra)
@@ -27,7 +25,29 @@ xaringanExtra::use_share_again()
 
 ```
 
+---
+background-image: url("http://assets.aims.fao.org.s3-eu-west-1.amazonaws.com/public/images/Open%20Science%20Monitor.jpg")
+background-position: 95% 50%
+background-size: 50%
+class: left middle
 
+.pull-left[
+*"Open Science refers to ongoing changes <br>in the way research is conducted: 
+for scientists themselves, through increasing the use of <br> 
+open access scientific publishing and open data, <br>
+and for the public, through increasing their understanding of and participation in science... <br>
+Open Science is one of three priority areas for European research, science and innovation policy,"- [RAND Corporation](http://aims.fao.org/activity/blog/open-science-monitor-access-data-and-trends-open-science).*
+]
+
+---
+
+# The document pipeline
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
+knitr::include_graphics("images/Article-pipeline-1.png")
+```
+
+---
 
 ## Music Vs. Research
 
@@ -44,17 +64,18 @@ knitr::include_graphics("images/Paper.png")
 
 ]
 
+
 ---
 
 ## Music Vs. Research
 
 .pull-left[
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
 knitr::include_graphics("images/excel-chaos.jpg")
 ```
 
 ]
-.pull-rigth[
+.pull-right[
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
 knitr::include_graphics("images/Paper.png")
 ```
@@ -67,14 +88,6 @@ knitr::include_graphics("images/Paper.png")
 - Understand the importance of the *replication principle* in research
 - Create a first dynamic document using a *Literate programming approach*
 
-
----
-
-# The document pipeline
-
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='100%'}
-knitr::include_graphics("images/Article-pipeline-1.png")
-```
 
 
 ---
