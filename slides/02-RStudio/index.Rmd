@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 require(fontawesome)
 require(xaringanExtra)
 xaringanExtra::use_share_again()
-
+require(countdown)
 ```
 
 
@@ -35,13 +35,12 @@ xaringanExtra::use_share_again()
 At the end of this
 
 - You will have a first encounter with R & Rstudio software and its importance for open science
-- You will have a basic understanding of the main functions
+- You will have a basic understanding of the main functions.
 
 ---
 
 # Agenda of this sprint
 
-Two elements
 
 ### 1. Understanding the Rstudio 
 
@@ -92,7 +91,6 @@ knitr::include_graphics("https://moderndive.netlify.app/images/shutterstock/R_vs
 
 ---
 
-
 class:  middle center 
 
 .assignment.infobox[
@@ -134,118 +132,79 @@ However, as you have notice, there is some restrictions in the quantity of proje
 
 # Connecting  Github repo with Rstudio
 
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("img/Rstudio-Github-00.png")
+```
 
+---
+
+# Connecting  Github repo with Rstudio
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("img/Rstudio-Github-01.png")
+```
+
+---
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
+knitr::include_graphics("img/Rstudio-Github-01-1.png")
+```
 
 ---
 # Understanding Rstudio Interface
 
-.left-column[
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='60%'}
+knitr::include_graphics("img/Rstudio-Github-02.png")
+```
 
+- 4 panels to understand
 
-]
+---
+# Installing the packages to run the tutorials
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='70%'}
+knitr::include_graphics("img/Rstudio-Github-04.png")
+```
+
 
 ---
 
-# First is first: Console
-
-
-
-
-
----
 class: middle
 
 # Hands on the PC!
 
----
-
-# Tutorial on Rstudio 
+- Open `Tutorials >01-basics > 01-Programming > 01-Programming-Basics-fr.Rmd`
+- Run the document
 
 .infobox.assignment[ **Objective**
 
-- This tutorial will learn you the basic skills to understand R languages.
-You will need in each analysis: how to inspect, visualize, subset, and transform your data, as well as how to **run code** with the basic functions.
+- This tutorial will learn you the basic skills to understand R language (and `console` panel).
 
-We'll concentrate our attention to this final element, How to **run code** and the basic functions. 
+You will go step-by-step in each analysis: how to understand the basics of R language, as well as how to **run code** with the basic functions.
 
 ]
-## Timming: 20 Mins. `r fa("clock")` 
 
 ---
 
-# Hands on with Rstudio 
-
-
-.left-column[
-
-1. Go to [this first this tutorial](https://rstudio.cloud/learn/primers/1.2)
-
-2. Complete the tutorial
-
-3. While you are completing, answers the questions .
-]
-.right-column[
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
-knitr::include_graphics("img/Rstudio-primers-00.jpg")
+knitr::include_graphics("img/Rstudio-Github-06.png")
 ```
-]
 
-
----
-
-class: middle center
-
-you finish?.. good!
-
-## Take 5 min for coffe `r fa("coffee")` 
-
-
----
-
-class: middle center
-
-# 2. Data Visualization 
-
-## An intro
-We are ba
-
-
----
-
-# What is data visualization
-
-
----
-
-## Why is it important
-
-
----
-
-# Hands on with Rstudio 
-
-
-.left-column[
-
-1. Go to [tutorial on Data Visualization basics](https://rstudio.cloud/learn/primers/1.1)
-
-2. Complete the tutorial
-
-3. While you are completing, answers the questions of section #2.
-]
-.right-column[
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
-knitr::include_graphics("img/Rstudio-primers-01.jpg")
+```{r, include=TRUE}
+countdown(minutes = 25, seconds = 0,right = 0)
 ```
-]
-
 
 
 ---
 
-class: middle center
+# Adding the key to connect
 
-Put the result of these first two elements on github! 
+-`Tools > Global Options > `
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='50%'}
+knitr::include_graphics("img/Rstudio-Github-03.png")
+```
+
+- Commit your changes on Github!
+
 
 ---
 
@@ -256,8 +215,3 @@ you finish?.. good!
 ## Take 10 min for a luch  `r fa("apple-alt")` 
 
 ### Let's move to the other Sprint!
-
----
-
-
-
