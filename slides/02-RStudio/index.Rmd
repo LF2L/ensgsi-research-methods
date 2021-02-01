@@ -212,6 +212,6 @@ class: middle center
 
 you finish?.. good!
 
-## Take 10 min for a luch  `r fa("apple-alt")` 
+## Take 10 min for a lunch  `r fa("apple-alt")` 
 
 ### Let's move to the other Sprint!
