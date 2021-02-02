@@ -25,32 +25,12 @@ Pick at least __two__ of the tasks below from the task menu and approach each wi
 
 * The mean life expectancy across all years for France?
 
-```{r eval=FALSE, echo=TRUE}
-library(dplyr)
-gapminder %>% filter(continent == "Asia") %>%
-  summarize(mean_exp = mean(lifeExp))
-```
-
 * Get the maximum and minimum of GDP per capita for all continents.
-
-```{r eval=FALSE, echo=TRUE}
-gapminder %>% group_by(continent) %>% summarise( Min.Value = min(gdpPercap),
-                                              Max.value = max(gdpPercap) ) 
-```
 
 * Look at the spread of GDP per capita across countries within the continents.
 
-```{r eval=FALSE, echo=TRUE}
-gapminder %>% group_by(continent) %>% summarise( Min.Value = min(gdpPercap),
-                                              Max.value = max(gdpPercap) ) 
-```
-
 * How does life expectancy vary across different continents? (Using a `ggplot`)
 
-```{r eval=FALSE, echo=TRUE}
-gapminder %>% 
-  ggplot( aes(y=lifeExp, x =continent ) ) + geom_boxplot()
-```
 
 
 
