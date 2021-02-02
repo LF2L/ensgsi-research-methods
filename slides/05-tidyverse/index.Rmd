@@ -52,33 +52,59 @@ Data wrangling is a major component in data anlaysis
 
 
 ---
-background-image: url('img/01-Introduction.001.jpeg')
-background-position: 95% 50%
-background-size: cover
 
---
-background-image: url('img/01-Introduction.002.jpeg')
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.001.jpeg")
+```
+---
 
---
-background-image: url('img/01-Introduction.003.jpeg')
 
---
-background-image: url('img/01-Introduction.004.jpeg')
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.002.jpeg")
+```
+---
 
---
-background-image: url('img/01-Introduction.005.jpeg')
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.003.jpeg")
+```
 
---
-background-image: url('img/01-Introduction.006.jpeg')
-
---
-background-image: url('img/01-Introduction.007.jpeg')
+---
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.004.jpeg")
+```
 
 ---
 
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.005.jpeg")
+```
+
+
+---
+
+
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.006.jpeg")
+```
+
+
+---
+
+
+```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
+knitr::include_graphics("img/01-Introduction.007.jpeg")
+```
+
+
+
+
+----
+
 The `tidyverse` is a collection of R packages that share common philosophies and are designed to work together. <br><br> 
   
-<a href="http://tidyverse.tidyverse.org/logo.png"><img src="img/tidyverse.png" style="width: 200px;"/></a>
+<a href="http://tidyverse.tidyverse.org/logo.png"><img src="img/logo.png" style="width: 200px;"/></a>
 
 
 ---
@@ -108,7 +134,7 @@ Do the Three tutorials on [Work with data](https://rstudio.cloud/learn/primers/2
 
 Answer the questions, in the  `ARCHE.Rmd` document as long as you find the answers.
 
-
+ 
 ---
 
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
