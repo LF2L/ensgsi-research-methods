@@ -242,27 +242,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="tasks-menu" class="section level2 unnumbered">
 <h2>Tasks menu</h2>
 <ul>
-<li>The mean life expectancy across all years for France?</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="final-exercise.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-2"><a href="final-exercise.html#cb2-2" aria-hidden="true" tabindex="-1"></a>gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(continent <span class="sc">==</span> <span class="st">&quot;Asia&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="final-exercise.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_exp =</span> <span class="fu">mean</span>(lifeExp))</span></code></pre></div>
-<ul>
-<li>Get the maximum and minimum of GDP per capita for all continents.</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="final-exercise.html#cb3-1" aria-hidden="true" tabindex="-1"></a>gapminder <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(continent) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>( <span class="at">Min.Value =</span> <span class="fu">min</span>(gdpPercap),</span>
-<span id="cb3-2"><a href="final-exercise.html#cb3-2" aria-hidden="true" tabindex="-1"></a>                                              <span class="at">Max.value =</span> <span class="fu">max</span>(gdpPercap) ) </span></code></pre></div>
-<ul>
-<li>Look at the spread of GDP per capita across countries within the continents.</li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="final-exercise.html#cb4-1" aria-hidden="true" tabindex="-1"></a>gapminder <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(continent) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>( <span class="at">Min.Value =</span> <span class="fu">min</span>(gdpPercap),</span>
-<span id="cb4-2"><a href="final-exercise.html#cb4-2" aria-hidden="true" tabindex="-1"></a>                                              <span class="at">Max.value =</span> <span class="fu">max</span>(gdpPercap) ) </span></code></pre></div>
-<ul>
-<li>How does life expectancy vary across different continents? (Using a <code>ggplot</code>)</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="final-exercise.html#cb5-1" aria-hidden="true" tabindex="-1"></a>gapminder <span class="sc">%&gt;%</span> </span>
-<span id="cb5-2"><a href="final-exercise.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>( <span class="fu">aes</span>(<span class="at">y=</span>lifeExp, <span class="at">x =</span>continent ) ) <span class="sc">+</span> <span class="fu">geom_boxplot</span>()</span></code></pre></div>
-<ul>
+<li><p>The mean life expectancy across all years for France?</p></li>
+<li><p>Get the maximum and minimum of GDP per capita for all continents.</p></li>
+<li><p>Look at the spread of GDP per capita across countries within the continents.</p></li>
+<li><p>How does life expectancy vary across different continents? (Using a <code>ggplot</code>)</p></li>
 <li><p>Report the absolute and/or relative abundance of countries with low life expectancy over time by continent: Compute some measure of worldwide life expectancy - you decide - a mean or median or some other quantile or perhaps your current age. Then determine how many countries on each continent have a life expectancy less than this benchmark, for each year.</p></li>
 <li><p>Make up your own!</p></li>
 </ul>
