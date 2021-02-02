@@ -1,7 +1,6 @@
-# Ggplot: The second trick!
+# Ggplot: Making reproducible plots!
 
 ## Presentation
-
 
 ```{r , echo=FALSE, include=TRUE}
 embed_xaringan(url = "slides/04-Dataviz/index.html", ratio = "16:9")
@@ -9,9 +8,7 @@ embed_xaringan(url = "slides/04-Dataviz/index.html", ratio = "16:9")
 
 At the end of this sprint, We hope that: 
 
-1. You know the magic of `ggplot2` to make beautiful plots.
-2. 
-3. 
+1. You know the magic of `ggplot2` to make reproducible plots.
 
 
 

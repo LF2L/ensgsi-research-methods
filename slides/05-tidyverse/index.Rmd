@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-#    self_contained: true
-#    lib_dir: "../../libs"
-    lib_dir: libs
+    self_contained: true
+    lib_dir: "../../libs"
+#    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
@@ -19,7 +19,7 @@ output:
 ---
 
 
-```{r , echo=FALSE, include=TRUE}
+```{r , echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
 require(fontawesome)
@@ -28,17 +28,6 @@ xaringanExtra::use_share_again()
 
 require(countdown)
 ```
-
-# We are assuming that...
-
-You know how it works:
-
-- Github
-- RStudio
-- and you start to understand R & Rmarkdown approach
-- You know some basics of `ggplot` package
-
-So let's start...
 
 
 ---
@@ -58,8 +47,8 @@ class: middle
 
 Data wrangling is a major component in data anlaysis
 
-- You will know the Five Major Versb used to manipulate your data 
-- You will have a basic understanding of the importante of `tidy`data.
+- You will know the Major Verbs used to manipulate your data 
+- You will have a basic understanding of the importance of `tidy`data.
 
 
 ---
@@ -93,22 +82,33 @@ The `tidyverse` is a collection of R packages that share common philosophies and
 
 
 ---
+class: inverse middle
+
+.white[
 
 
-# Hands on the PC: Hi  tidyverse!    `r icon::fa("clipboard-list",  pull = "right")`
+## Autonomus tutorial:  Hi tidyverse!    `r icon::fa("clipboard-list",  pull = "right")`
 
+]
+
+
+---
+
+
+Do the Three tutorials on [Work with data](https://rstudio.cloud/learn/primers/2)
 
 .infobox.assignment[
 
-Let's play with the **`tidyverse`**:
+1. Start with the [Working with Tibbles](https://rstudio.cloud/learn/primers/2.1).
 
+1. Then [Isolating data with DPLYR](https://rstudio.cloud/learn/primers/2.2)
 
-1. Open the `Tutorials > 02-transform-data > 01-tibbles > 01-tibbles-fr.Rmd` file on Rstudio cloud.
-
-1. Install the package `prenoms` using `devtools::install_github( "ThinkR-open/prenoms")` in the console panel.
-2. `Run document` and make the step-by-step tutorial
-3. Answer the questions, in the  `index.Rmd` document as long as you find the answers.
+1. And finally [Derive Information with dplyr](https://rstudio.cloud/learn/primers/2.3).
 ]
+
+Answer the questions, in the  `ARCHE.Rmd` document as long as you find the answers.
+
+
 ---
 
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
@@ -117,381 +117,15 @@ knitr::include_graphics("img/tibble-00.jpg")
 
 
 ```{r, include=TRUE}
-countdown(minutes = 25, seconds = 0,right = 0)
-```
-
----
-
-
-
-
-
-
----
-class: middle center
-
-
-# Summarizing main insigths on `tidyverse` 
-
-
----
-
-# First motivating example for today
-
-<a href="http://gitsense.github.io/images/wealth.gif"><img src="img/wealth.gif" style="width: 700px;"/></a>
-
-- Inspired by the late, great [Hans Rosling](https://www.youtube.com/watch?v=jbkSRLYSojo)
-
-
----
-
-layout: false
-class: center, middle
-name: wrangling
-
-# Data Wrangling
-
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='30%'}
-knitr::include_graphics("img/dplyr_hex.png")
-```
-
----
-
-class: middle
-
-
-## The [`gapminder` package](https://github.com/jennybc/gapminder)
-
-```{r, include=TRUE, echo=TRUE}
-library(gapminder)
-gapminder
-```
-
-
----
-
-# Base R versus the `tidyverse`
-
-- The mean life expectancy across all years for Asia
---
-
-```{r, include= TRUE, echo=TRUE}
-# Base R
-asia <- gapminder[gapminder$continent == "Asia", ]
-mean(asia$lifeExp)
-```
---
- 
-```{r eval=FALSE, echo=TRUE}
-library(dplyr)
-gapminder %>% filter(continent == "Asia") %>%
-  summarize(mean_exp = mean(lifeExp))
-```
-
-```{r, include=TRUE, echo=TRUE, eval=TRUE}
-library(dplyr)
-gapminder %>% filter(continent == "Asia") %>%
-  summarize(mean_exp = as.numeric(format(mean(lifeExp), digits = 5))) %>% 
-  pull()
-```
-
-
----
-
-## The pipe `%>%`
-
-<img src="figure/pipe.png" style="width: 240px;"/> &emsp; &emsp; &emsp; <img src="figure/MagrittePipe.jpg" style="width: 300px;"/>
---
-
-- A way to chain together commands
-- Can be read as "and then" when reading over code
---
-
-```{r eval=FALSE, purl=FALSE}
-library(dplyr)
-gapminder %>% filter(continent == "Asia") %>%
-  summarize(mean_exp = mean(lifeExp))
-```
-
----
-
-name: fivemv
-
-# [The Five Main Verbs (5MV)](http://moderndive.com/5-wrangling.html) of data wrangling
-
-- [`filter()`](#filter) 
-- [`summarize()`](#summarize)
-- [`group_by()`](#groupby)
-- [`mutate()`](#mutate) 
-- [`arrange()`](#arrange)
-
----
-
-name: filter
-
-## `filter()`
-
-- Select a subset of the rows of a data frame. 
-
-- Arguments are "filters" that you'd like to apply.
---
-
-```{r, echo=TRUE, eval=TRUE, include=TRUE}
-library(gapminder); library(dplyr)
-gap_2007 <- gapminder %>% filter(year == 2007)
-head(gap_2007, 4)
-```
-
-- Use `==` to compare a variable to a value
-
----
-
-## Logical operators
-
-- Use `|` to check for any in multiple filters being true:
---
-
-```{r eval=FALSE, purl=FALSE}
-gapminder %>% 
-  filter(year == 2002 | continent == "Asia") %>% 
-  sample_n(8)
-```
---
-
-```{r echo=FALSE, purl=TRUE}
-set.seed(2018)
-gapminder %>% 
-  filter(year == 2002 | continent == "Asia") %>% 
-  sample_n(8)
-```
-
----
-
-## Logical operators
-
-- Use `,` to check for all of multiple filters being true:
---
-
-```{r eval=FALSE, purl=FALSE}
-gapminder %>% 
-  filter(year == 2002, continent == "Asia")
-```
-
-```{r echo=FALSE, purl=TRUE}
-gapminder %>% 
-  filter(year == 2002, continent == "Asia") %>% 
-  head(8)
-```
-
----
-
-## Logical operators
-
-- Use `%in%` to check for any being true <br> (shortcut to using `|` repeatedly with `==`)
---
-
-```{r eval=FALSE, purl=FALSE}
-gapminder %>% 
-  filter(country %in% c("Argentina", "Belgium", "Mexico"),
-         year %in% c(1987, 1992))
-```
---
-
-```{r echo=FALSE, purl=TRUE}
-gapminder %>% 
-  filter(country %in% c("Argentina", "Belgium", "Mexico"),
-         year %in% c(1987, 1992))
-```
-
-
----
-
-name: summarize
-
-## `summarize()`
-
-- Any numerical summary that you want to apply to a column of a data frame is specified within `summarize()`.
-
-```{r eval=FALSE, purl=FALSE}
-stats_1997 <- gapminder %>% 
-  filter(year == 1997) %>% 
-  summarize(max_exp = max(lifeExp),
-            sd_exp = sd(lifeExp))
-stats_1997
-```
---
-
-```{r echo=FALSE, purl=TRUE}
-stats_1997 <- gapminder %>% 
-  filter(year == 1997) %>% 
-  summarize(max_exp = max(lifeExp),
-            sd_exp = sd(lifeExp))
-stats_1997
-```
-
----
-
-name: groupby
-
-### Combining `summarize()` with `group_by()`
-
-When you'd like to determine a numerical summary for all
-levels of a different categorical variable
-
-```{r eval=FALSE, purl=FALSE}
-max_exp_1997_by_cont <- gapminder %>% 
-  filter(year == 1997) %>% 
-  group_by(continent) %>%
-  summarize(max_exp = max(lifeExp),
-            sd_exp = sd(lifeExp))
-max_exp_1997_by_cont
-```
-
---
-```{r echo=FALSE, purl=TRUE}
-max_exp_1997_by_cont <- gapminder %>% 
-  filter(year == 1997) %>% 
-  group_by(continent) %>%
-  summarize(max_exp = max(lifeExp),
-            sd_exp = sd(lifeExp))
-max_exp_1997_by_cont
-```
-
----
-
-name: mutate
-
-## `mutate()`
-
-- Allows you to 
-    1. <font color="yellow">create a new variable with a specific value</font> OR
-    2. create a new variable based on other variables OR
-    3. change the contents of an existing variable
-
---
-
-```{r, purl=TRUE}
-gap_plus <- gapminder %>% mutate(just_one = 1)
-head(gap_plus, 4)
-```
-
----
-
-## `mutate()`
-
-- Allows you to 
-    1. create a new variable with a specific value OR
-    2. <font color="yellow">create a new variable based on other variables</font> OR
-    3. change the contents of an existing variable
-
---
-
-```{r echo=FALSE, purl=TRUE}
-set.seed(2)
-```
-
-
-```{r, purl=TRUE}
-gap_w_gdp <- gapminder %>% mutate(gdp = pop * gdpPercap)
-sample_n(gap_w_gdp, 4)
-```
-
----
-
-## `mutate()`
-
-- Allows you to 
-    1. create a new variable with a specific value OR
-    2. create a new variable based on other variables OR
-    3. <font color="yellow">change the contents of an existing variable</font>
-
---
-
-```{r, purl=TRUE}
-gap_weird <- gapminder %>% mutate(pop = pop + 1000)
-head(gap_weird, 4)
-```
-
----
-
-name: arrange
-
-## `arrange()`
-
-- Reorders the rows in a data frame based on the values of one or more variables
---
-
-```{r, purl=TRUE}
-gapminder %>% arrange(year, country) %>% head(10)
-```
-
----
-
-## `arrange()`
-
-- Can also put into descending order
---
-
-```{r desc, purl=TRUE}
-gapminder %>%
-  filter(year > 2000) %>%
-  arrange(desc(lifeExp)) %>%
-  head(10)
-```
-
----
-
-## Don't mix up `arrange` and `group_by`
-
-- `group_by` is used (mostly) with `summarize` to calculate summaries over groups
-
-- `arrange` is used for sorting
-
----
-
-## Don't mix up `arrange` and `group_by`
-
-This doesn't really do anything useful
-
-```{r purl=TRUE}
-gapminder %>% group_by(year)
-```
-
----
-
-## Don't mix up `arrange` and `group_by`
-
-But this does
-
-```{r purl=TRUE}
-gapminder %>% arrange(year)
-```
-
-
----
-
-# Commit your files changes on Github
-
-1. In the `Environment Panel`,  go to `Git` tab.
-
-2. Select each element that appears to be changed.
-  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
-
-3. Add a `Commit message`
-
-3. Click on `Commit` 
-
-4. Click on `Push`
-
-
-```{r, include=TRUE, echo=FALSE}
-countdown( minutes = 1, seconds = 30,right = 0)
+countdown(minutes = 60, seconds = 0,right = 0)
 ```
 
 
 ---
 
 class: center, middle
+
+Take a break 15 min.
 
 ## Coffe  `r emo::ji("coffee")`
 

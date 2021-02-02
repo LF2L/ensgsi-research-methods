@@ -29,16 +29,6 @@ xaringanExtra::use_share_again()
 require(countdown)
 ```
 
-# We are assuming that...
-
-You know how it works:
-
-- Github
-- RStudio
-- and you start to understand R & Rmarkdown approach
-
-So let's start...
-
 
 ---
 
@@ -46,7 +36,7 @@ So let's start...
 
 Data visualization is a fundamental part of the analysis of data.
 
-- You will produce your first reproducible image and put it online. 
+- You will produce your first reproducible image.
 - You will have a basic understanding of the main component and functions of `ggplot2`.
 
 
@@ -57,9 +47,7 @@ class: middle
 # Agenda of this sprint
 
 
-.Large[1) Understanding the `ggplot2` package]
-
-.Large[2) Embed text and images in the `.Rmd` document and  publishin to Github ]
+1. Understanding the `ggplot2` package
 
 ---
 
@@ -103,20 +91,29 @@ class: middle
 
 
 ---
+class: inverse middle
 
-# Hands on the PC: Hi  grammar of graphics!    `r icon::fa("clipboard-list",  pull = "right")`
+.white[
 
+
+## Autonomus tutorial: Hi  grammar of graphics!    `r icon::fa("clipboard-list",  pull = "right")`
+]
+
+
+
+---
 
 .infobox.assignment[
 
 
-Let's play with the **`ggplot2`**:
+Let's play with the **ggplot2**:
 
 
-1. Open the `Tutorials > 01-basics > 02-Dataviz > 02-Vis-Basics-fr.Rmd` file on Rstudio cloud.
-2. `Run document` and make the step-by-step tutorial
-3. Answer the questions, in the  `index.Rmd` document as long as you find the answers.
+1. Open the [`Data Visualization Basics`](https://rstudio.cloud/learn/primers/1.1)  on Rstudio cloud.
+2. Make the step-by-step tutorial
+3. Answer the questions, in the `ARCHE.Rmd` document as long as you find the answers.
 ]
+
 ---
 
 ```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='80%'}
@@ -133,31 +130,8 @@ countdown(minutes = 20, seconds = 0,right = 0)
 class: middle
 
 
-# Summarizing the insigths on `ggplot2` the ARCHE docuoment
+# Summarize the insigths on `ggplot2` the ARCHE document
  
-
-
----
-
-# Commit your files changes on Github
-
-
-1. In the `Environment Panel`,  go to `Git` tab.
-
-2. Select each element that appears to be changed.
-  - You can use `Ctrl / Cmd + A` to select of of them, and press `Enter`
-
-3. Add a `Commit message`
-
-3. Click on `Commit` 
-
-4. Click on `Push`
-
-
-```{r, include=TRUE, echo=FALSE}
-countdown( minutes = 1, seconds = 30,right = 0)
-```
-
 
 ---
 

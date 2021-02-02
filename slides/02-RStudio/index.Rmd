@@ -19,7 +19,6 @@ output:
 ---
 
 
-
 ```{r , echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = FALSE)
 
@@ -42,9 +41,7 @@ At the end of this
 # Agenda of this sprint
 
 
-### 1. Understanding the Rstudio 
-
-### 2. Data Visualization: an Intro
+### 1. Understanding the R language. 
 
 
 ---
@@ -89,65 +86,6 @@ RStudio is an integrated development environment (IDE) that provides an interfac
 knitr::include_graphics("https://moderndive.netlify.app/images/shutterstock/R_vs_RStudio_1.png")
 ```
 
----
-
-class:  middle center 
-
-.assignment.infobox[
-.Large[Hands on the workshop!.]
-
-The main goal is to create an Rstudio account, and to connect it with Github 
-]
-
-
----
-
-# Using Rstudio Cloud account (Recommended)
-
-.left-column[ 
-1. Sign up for free version: https://rstudio.cloud/
-
-2. Use you github account!
-
-3. Voila!, C'est bon
-
-**Timming**: 5 min
-]
-
-.right-column[ 
-
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
-knitr::include_graphics("img/RStudio-cloud-00.jpg")
-```
-
-]
-
-
-.infobox.important.pull-down[
-**RStudio Cloud is a webpage**, so no installation is required. 
-
-However, as you have notice, there is some restrictions in the quantity of project and the virtual machine assigned to you.  It's the best option to get start!]
-
----
-
-# Connecting  Github repo with Rstudio
-
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
-knitr::include_graphics("img/Rstudio-Github-00.png")
-```
-
----
-
-# Connecting  Github repo with Rstudio
-
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
-knitr::include_graphics("img/Rstudio-Github-01.png")
-```
-
----
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='90%'}
-knitr::include_graphics("img/Rstudio-Github-01-1.png")
-```
 
 ---
 # Understanding Rstudio Interface
@@ -168,11 +106,14 @@ knitr::include_graphics("img/Rstudio-Github-04.png")
 
 ---
 
-class: middle
+class: middle inverse
 
-# Hands on the PC!
+# .white[Autonomus tutorial!]
 
-- Open `Tutorials >01-basics > 01-Programming > 01-Programming-Basics-fr.Rmd`
+
+---
+
+- Open [`Programming basics tutoria`](https://rstudio.cloud/learn/primers/1.2)
 - Run the document
 
 .infobox.assignment[ **Objective**
@@ -196,14 +137,11 @@ countdown(minutes = 25, seconds = 0,right = 0)
 
 ---
 
-# Adding the key to connect
+class: middle
 
--`Tools > Global Options > `
-```{r, include=TRUE, fig.align='center', cache=TRUE, out.width='50%'}
-knitr::include_graphics("img/Rstudio-Github-03.png")
-```
+# Answer the questions on the ARCHE-rendu.Rmd !
 
-- Commit your changes on Github!
+
 
 
 ---
@@ -212,6 +150,6 @@ class: middle center
 
 you finish?.. good!
 
-## Take 10 min for a luch  `r fa("apple-alt")` 
+## Take 5 min for a  `r fa("apple-alt")` 
 
 ### Let's move to the other Sprint!

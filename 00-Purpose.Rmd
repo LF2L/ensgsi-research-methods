@@ -77,7 +77,15 @@ You can also go through other free resources including:
 In french: 
 
 <div class="col2">
+* [Thinkr](https://thinkr.fr/)
+* [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/index.html)
+* [analyse-R](https://larmarange.github.io/analyse-R/)
+</div><br/>
 
+
+In english: 
+
+<div class="col2">
 * [STAT 545](https://stat545.com/index.html#other-contributors)
 * [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/)
 * [Hadley Wickham](https://twitter.com/hadleywickham)
@@ -91,13 +99,6 @@ In french:
 * [Julia Silge](https://twitter.com/juliasilge)
 * [Jenny Bryan](https://twitter.com/JennyBryan)
 * [Garrick Aden‑Buie](https://twitter.com/grrrck)
-</div><br/>
-
-
-In english: 
-
-<div class="col2">
-
 * [Free RStudio Education resources](https://education.rstudio.com)
 * [Codeacademy](https://www.codecademy.com/learn/learn-r)
 * [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
@@ -107,8 +108,7 @@ In english:
 En Español:
 
 * [Metadocencia](https://www.metadocencia.org/)
-
-- [R Coder](https://r-coder.com/)
+* [R Coder](https://r-coder.com/)
 
 
 <div class="col2">
@@ -137,6 +137,18 @@ Don't worry if you are unsure about what GitHub is we cover it in the course.
 
 This module is always a *Work in Progress*. 
 Given the fact that you will use it, and understand, let us know you opinion on github. 
+
+
+
+## We practice what we preach! {-}
+
+This site is created with Git and R markdown, using the bookdown package. 
+
+Go ahead and peek behind the scenes.
+
+
+
+
 
 
 

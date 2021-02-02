@@ -1,4 +1,6 @@
-# Magic of R & Rstudio
+# (PART\*) Sprints {-}
+
+# Understanding R & Rstudio
 
 ## Presentation
 
@@ -9,6 +11,6 @@ embed_xaringan(url = "slides/02-Rstudio/index.html", ratio = "16:9")
 
 At the end of this sprint, We suppose that: 
 
-1. You have created your Rcloud account, and you have connection with Github 
-2. You have made a commit from Rcloud account changing the `index.Rmd` file with your name.
+1. You have created your Rcloud account.
+
 

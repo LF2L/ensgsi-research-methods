@@ -1,0 +1,80 @@
+# Final Exercise
+
+## Gapminder challenge
+
+<a href="http://gitsense.github.io/images/wealth.gif"><img src="figures/wealth.gif" style="width: 700px;"/></a>
+
+- Inspired by the late, great [Hans Rosling](https://www.youtube.com/watch?v=jbkSRLYSojo)
+
+
+Install and load the [`gapminder` data package](https://github.com/jennybc/gapminder)
+
+```{r, eval=FALSE, echo=TRUE, include=TRUE}
+install.packages("gapminder")
+library(gapminder)
+gapminder
+```
+
+
+Pick at least __two__ of the tasks below from the task menu and approach each with a table and figure. 
+
+  * `dplyr` should be your main data manipulation tool
+  * `ggplot2` should be your main visualization tool
+
+## Tasks menu {-}
+
+* The mean life expectancy across all years for France?
+
+```{r eval=FALSE, echo=TRUE}
+library(dplyr)
+gapminder %>% filter(continent == "Asia") %>%
+  summarize(mean_exp = mean(lifeExp))
+```
+
+* Get the maximum and minimum of GDP per capita for all continents.
+
+```{r eval=FALSE, echo=TRUE}
+gapminder %>% group_by(continent) %>% summarise( Min.Value = min(gdpPercap),
+                                              Max.value = max(gdpPercap) ) 
+```
+
+* Look at the spread of GDP per capita across countries within the continents.
+
+```{r eval=FALSE, echo=TRUE}
+gapminder %>% group_by(continent) %>% summarise( Min.Value = min(gdpPercap),
+                                              Max.value = max(gdpPercap) ) 
+```
+
+* How does life expectancy vary across different continents? (Using a `ggplot`)
+
+```{r eval=FALSE, echo=TRUE}
+gapminder %>% 
+  ggplot( aes(y=lifeExp, x =continent ) ) + geom_boxplot()
+```
+
+
+
+* Report the absolute and/or relative abundance of countries with low life expectancy over time by continent: Compute some measure of worldwide life expectancy - you decide - a mean or median or some other quantile or perhaps your current age. Then determine how many countries on each continent have a life expectancy less than this benchmark, for each year.
+
+* Make up your own! 
+
+
+---
+
+
+You're encouraged to reflect on what was hard/easy, problems you solved, helpful tutorials you read, etc.
+
+
+- Gapminder EDA ideas from [Jenny Bryan](http://stat545.com/hw03_dplyr-and-more-ggplot2.html), author and creator of the [Gapminder package](https://cran.r-project.org/web/packages/gapminder/index.html).  
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+

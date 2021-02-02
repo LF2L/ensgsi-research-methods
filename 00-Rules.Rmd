@@ -10,40 +10,12 @@ Then, you will have a tutorial with step-by-step instructions you can go through
 
 ## Assignments for ARCHE Plateform {-}
 
-After that, several questions or quest will be proposed. 
+After that, several questions need to be answered at the end of the tutorial. 
 
-Some of the results are going to be upload to the ARCHE Platform to evaluate the comprehension of the module.
-
-
-:::.arche
-
-:::
-
+A pdf document with the results  are going to be upload to the ARCHE Platform to evaluate the comprehension of the module.
 
 
 You will need to upload the following results.
-
-
-
-## We practice what we preach! {-}
-
-This site is created with Git and R markdown, using the bookdown package. 
-
-Go ahead and peek behind the scenes.
-
-
-
-## Final rapport {-}
-
-At the end of this module, you will be able to write scientific papers and introduce some reproducible graphics. Nevertheless, take into account that:
-
-
-![](figures/first-draft.jpg){style="width: 100%"}
-
-We hope that the you can use some of the concepts presented here.
-
-
-
 
 
 

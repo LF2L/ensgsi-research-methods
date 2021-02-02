@@ -63,16 +63,12 @@ Thus, we have taken inspiration of many people around the world and we thank to 
 
 <div class="col2">
 
-* [STAT 545](https://stat545.com/index.html#other-contributors)
+* [Alison Presmanes Hill](https://twitter.com/apreshill)
 * [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/)
 * [Hadley Wickham](https://twitter.com/hadleywickham)
-* [Alison Presmanes Hill](https://twitter.com/apreshill)
 * [Desirée De Leon](https://twitter.com/dcossyle)
 * [Yihui Xie](https://twitter.com/xieyihui)
-* [Robin Lovelace](https://twitter.com/robinlovelace)
 * [Twitter for R programmers](https://www.t4rstats.com/index.html)
-* [Matt Ng](https://twitter.com/mattnkm)
-* [StatQuest with Josh Starmer](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
 * [Julia Silge](https://twitter.com/juliasilge)
 * [Jenny Bryan](https://twitter.com/JennyBryan)
 * [Garrick Aden‑Buie](https://twitter.com/grrrck)

@@ -6,9 +6,9 @@ institute: "Université de Lorraine"
 date: "2021/02/01 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    self_contained: true
-    lib_dir: "../../libs"
-#    lib_dir: libs
+#    self_contained: true
+#    lib_dir: "../../libs"
+    lib_dir: libs
     css: ["default","../../assets/ENSGSI-theme.css", "https://www.fabbiocrux.com/xaringan/Fabio.css", "https://www.fabbiocrux.com/xaringan/Fabio-fonts.css"]
     nature:
       ratio: "16:9"
