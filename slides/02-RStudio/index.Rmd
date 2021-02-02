@@ -150,6 +150,7 @@ class: middle center
 
 you finish?.. good!
 
+
 ## Take 5 min for a  `r fa("apple-alt")` 
 
 ### Let's move to the other Sprint!
