@@ -29,7 +29,7 @@ biblio-style: apalike
 link-citations: yes
 
 github-repo: "LF2L/ensgsi-research-methods"
-url: 'https://LF2L.github.io/ensgsi-research-methods/'
+url: 'https://lf2l.fr/ensgsi-research-methods/'
 ---
 
 
